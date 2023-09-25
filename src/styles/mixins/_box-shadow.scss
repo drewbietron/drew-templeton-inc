@@ -1,0 +1,15 @@
+@mixin box-shadow($hoverOnly: false, $spread: 0) {
+  @if $hoverOnly ==false {
+    box-shadow: 0 0 1rem $spread rgba(var(--box-shadow-rgb), 0.35);
+  }
+
+  transition: all 0.35s;
+
+  &:hover {
+    box-shadow: 0 0 1rem $spread rgba(var(--box-shadow-rgb), 0.35);
+  }
+
+  &:active {
+    opacity: .75;
+  }
+}

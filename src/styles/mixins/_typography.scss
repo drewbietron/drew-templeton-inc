@@ -1,0 +1,80 @@
+@import "../config/";
+
+@mixin type($font-size: base, $font: copy) {
+  @include font-size($font-size);
+  font-family: map-get($fonts, $font);
+}
+
+@mixin copy($font-size: base, $bold: false, $maxWidth: false) {
+  line-height: 1.5;
+  @if $bold == true {
+    @include type($font-size, copyBold);
+  } @else {
+    @include type($font-size);
+  }
+
+  @if $maxWidth ==true {
+    max-width: 45rem;
+  } @else {
+    max-width: none;
+  }
+}
+
+@mixin bold() {
+  font-family: map-get($fonts, copyBold);
+}
+
+@mixin sub-heading($font-size: base, $font: copyBold) {
+  @include type($font-size, $font);
+  letter-spacing: 1px;
+  line-height: 0.9;
+}
+
+@mixin heading($font-size: large, $font: heading) {
+  @include type($font-size, $font);
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 0.9;
+}
+
+@mixin font-size($font-size) {
+  @if $font-size == micro {
+    font-size: 0.65rem;
+  } @else if $font-size == tiny {
+    font-size: 0.725rem;
+  } @else if $font-size == small {
+    font-size: 0.8rem;
+  } @else if $font-size == base {
+    font-size: 1rem;
+  } @else if $font-size == medium {
+    font-size: 1.25rem;
+  } @else if $font-size == large {
+    font-size: 1.5rem;
+  } @else if $font-size == jumbo {
+    font-size: 2rem;
+  } @else if $font-size == header {
+    font-size: clamp(3rem, 15vw, 12rem);
+  } @else {
+    font-size: $font-size;
+  }
+
+  @include breakpoint(large, min) {
+    @if $font-size == tiny {
+      font-size: 0.8rem;
+    } @else if $font-size == small {
+      font-size: 1rem;
+    } @else if $font-size == base {
+      font-size: 1.15rem;
+    } @else if $font-size == medium {
+      font-size: 1.45rem;
+    } @else if $font-size == large {
+      font-size: 1.75rem;
+    } @else if $font-size == jumbo {
+      font-size: 2.25rem;
+    } @else if $font-size == header {
+      font-size: clamp(3rem, 15vw, 12rem);
+    } @else {
+      font-size: $font-size;
+    }
+  }
+}

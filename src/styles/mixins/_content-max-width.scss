@@ -1,0 +1,6 @@
+@mixin pageContentMaxWidth() {
+  max-width: map-get($map: $spacing, $key: siteMaxWidth);
+  margin: 0 auto;
+  padding-left: map-get($map: $spacing, $key: padding);
+  padding-right: map-get($map: $spacing, $key: padding);
+}

@@ -1,0 +1,27 @@
+@import '../../styles/config/';
+@import "../../styles/mixins/grid";
+@import "../../styles/mixins/typography";
+
+.row {
+  &-title {
+    @include heading(jumbo);
+    margin-bottom: map-get($map: $spacing, $key: padding);
+  }
+
+  &-description {
+    @include copy(medium, false, true);
+    margin-bottom: map-get($map: $spacing, $key: paddingDynamic);
+  }
+
+  &-card-container {
+    @include grid(1, map-get($map: $spacing, $key: padding));
+
+    @include breakpoint(medium, min) {
+      @include grid(2, map-get($map: $spacing, $key: padding));
+    }
+
+    @include breakpoint(large, min) {
+      @include grid(3, map-get($map: $spacing, $key: padding));
+    }
+  }
+}

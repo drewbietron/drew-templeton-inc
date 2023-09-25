@@ -1,0 +1,61 @@
+// Browsers don’t currently support range context queries, so we work around the limitations
+// of min- and max- prefixes and viewports with fractional widths
+// (which can occur under certain conditions on high-dpi devices, for instance)
+// by using values with higher precision.
+$breakpoints: (
+  xsmall: (
+    min: 400px,
+    max: 399.98px,
+  ),
+  small: (
+    min: 576px,
+    max: 575.98px,
+  ),
+  medium: (
+    min: 768px,
+    max: 767.98px,
+  ),
+  large: (
+    min: 992px,
+    max: 991.98px,
+  ),
+  x-large: (
+    min: 1200px,
+    max: 1199.98px,
+  ),
+  xx-large: (
+    min: 1330px,
+    max: 1329.98px,
+  ),
+);
+
+@mixin breakpoint($breakpoint, $direction: min) {
+  //
+  // Accepted breakpoints {small, medium, large, x-large, xx-large}
+  //
+  @if map-has-key($breakpoints, $breakpoint) {
+    $breakpoint-values: map-get($breakpoints, $breakpoint);
+    $breakpoint-min: map-get($breakpoint-values, min);
+    $breakpoint-max: map-get($breakpoint-values, max);
+
+    @if $direction == min {
+      @media (min-width: $breakpoint-min) {
+        @content;
+      }
+    } @else {
+      @media (max-width: $breakpoint-max) {
+        @content;
+      }
+    }
+  } @else {
+    @if $direction == min {
+      @media (min-width: $breakpoint) {
+        @content;
+      }
+    } @else {
+      @media (max-width: $breakpoint) {
+        @content;
+      }
+    }
+  }
+}

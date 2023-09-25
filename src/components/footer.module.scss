@@ -1,0 +1,64 @@
+@import '../styles/config/';
+@import '../styles/mixins/content-max-width';
+@import '../styles/mixins/link';
+@import '../styles/mixins/typography';
+
+.footer {
+  @include pageContentMaxWidth();
+  padding-top: 2rem;
+
+  &-container {
+    display: flex;
+
+    width: 100%;
+    min-width: 100%;
+    flex-direction: column;
+
+    @include breakpoint(medium, min) {
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &-contact-container {
+    display: flex;
+    gap: map-get($map: $spacing, $key: padding) * 2;
+    flex-direction: column;
+    margin: map-get($map: $spacing, $key: padding) * 2 0;
+
+    @include breakpoint(medium, min) {
+      margin: 0;
+      text-align: right;
+      flex-direction: row;
+    }
+  }
+
+  address {
+    text-decoration: none;
+    @include copy();
+  }
+
+  &-logo {
+    width: 3rem;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    @include copy();
+
+    a {
+      @include link();
+    }
+  }
+
+  p {
+    width: 100%;
+    padding-bottom: 1rem;
+
+    @include breakpoint(medium, min) {
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+@import "../config/";
+
+@mixin link($hoverOnly: false, $highLightVisited: true) {
+  @if $hoverOnly == false {
+    text-decoration: underline;
+  }
+
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  @if $highLightVisited {
+    &:visited {
+      color: var(--primary);
+    }
+  }
+}

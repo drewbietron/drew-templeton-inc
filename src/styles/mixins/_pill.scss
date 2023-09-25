@@ -1,0 +1,17 @@
+@import "../config/";
+
+@mixin pill($variant: "primary") {
+  padding: 0.5rem 0.75rem;
+  background-color: var(--background-secondary);
+  border-radius: map-get($map: $spacing, $key: borderRadius);
+  display: block;
+  cursor: pointer;
+
+  @if $variant == "secondary" {
+    background-color: var(--background-primary);
+    border: 1px solid var(--background-secondary);
+  } @else {
+    background-color: var(--background-secondary);
+    border: 1px solid var(--background-primary);
+  }
+}

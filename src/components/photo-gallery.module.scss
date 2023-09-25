@@ -1,0 +1,22 @@
+@import '../styles/config/';
+
+.gallery {
+  column-count: 1;
+  gap: map-get($map: $spacing, $key: padding);
+
+  @include breakpoint(medium, min) {
+    column-count: 2;
+  }
+
+  @include breakpoint(large, min) {
+    column-count: 3;
+  }
+
+  @include breakpoint(xx-large, min) {
+    column-count: 4;
+  }
+
+   &__item {
+    margin-bottom: map-get($map: $spacing, $key: padding);
+   }
+}

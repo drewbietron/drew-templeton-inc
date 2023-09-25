@@ -1,0 +1,72 @@
+@import '../styles/config/';
+@import '../styles/mixins/content-max-width';
+@import '../styles/mixins/typography';
+@import '../styles/mixins/grid';
+
+.about {
+  // display: flex;
+  // justify-content: space-evenly;
+
+
+  &-bio {
+    margin-top: map-get($map: $spacing, $key: paddingDynamicLarge);
+
+    h2 {
+      @include heading(large);
+      margin-bottom: map-get($map: $spacing, $key: padding);
+    }
+
+    p {
+      @include copy(base, false, true);
+      margin-bottom: map-get($map: $spacing, $key: padding)
+    }
+
+    &-image {
+      display: flex;
+      flex-direction: "row";
+      gap: map-get($map: $spacing, $key: padding) ;
+
+       &-container {
+        position: relative;
+        width: 10rem;
+        min-width: 10rem;
+        height: auto;
+       }
+
+      img {
+        width: 100%;
+        border-radius: map-get($map: $spacing, $key: borderRadius);
+      }
+    }
+
+  }
+
+  &-photos {
+    @include grid(4, map-get($map: $spacing, $key: padding));
+    margin-bottom: map-get($map: $spacing, $key: padding);
+
+    figure {
+      text-align: center;
+
+      img {
+        border-radius: 50%;
+        margin-bottom: map-get($map: $spacing, $key: padding);
+      }
+
+      h2 {
+        @include heading(large);
+        margin-bottom: map-get($map: $spacing, $key: padding) / 2;
+      }
+
+      p {
+        @include copy();
+      }
+
+      span {
+        @include copy(tiny);
+      }
+    }
+  }
+
+
+}

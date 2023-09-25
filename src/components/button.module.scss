@@ -1,0 +1,78 @@
+@import "../styles/config/";
+@import "../styles/mixins/typography";
+@import "../styles/mixins/box-shadow";
+
+.button {
+  @include heading(medium);
+  @include box-shadow(true);
+  color: var(--black);
+  background-color: var(--primary);
+  border-color: var(--primary);
+  border-radius: map-get($map: $spacing, $key: borderRadius);
+  border-style: solid;
+  border-width: map-get($map: $spacing, $key: borderWidth);
+  cursor: pointer;
+  padding: calc(map-get($map: $spacing, $key: padding));
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: map-get($map: $spacing, $key: padding) / 2;
+
+
+  &:active {
+    opacity: 0.8;
+  }
+
+  svg {
+    width: 1rem;
+    height: auto;
+  }
+
+  &--tiny {
+    @include font-size(tiny);
+    padding: calc(map-get($map: $spacing, $key: padding)) * 0.5;
+  }
+
+  &--small {
+    @include font-size(small);
+    padding: calc(map-get($map: $spacing, $key: padding)) * 0.75;
+  }
+
+  &--large {
+    @include font-size(large);
+    padding: calc(map-get($map: $spacing, $key: padding)) * 1.25;
+
+    svg {
+      width: 1.5rem;
+      height: auto;
+    }
+  }
+
+  &--outline {
+    background-color: transparent;
+    color: var(--primary);
+  }
+
+  &--secondary {
+    background-color: var(--background-primary);
+    color: var(--text-primary);
+    border-color: var(--border);
+  }
+
+  &--secondary-alternate {
+    background-color: var(--background-secondary);
+    color: var(--text-primary);
+    border-color: var(--border);
+  }
+
+  &--disabled {
+    background-color: rgba(var(--disabled-rgb), 0.1);
+    border-color: var(--disabled);
+    color: var(--disabled);
+    cursor: "not-allowed";
+    pointer-events: "all";
+    border-radius: map-get($map: $spacing, $key: borderRadius);
+  }
+}

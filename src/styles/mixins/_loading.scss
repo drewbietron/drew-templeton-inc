@@ -1,0 +1,5 @@
+@mixin skeleton {
+  width: 100%;
+  border-radius: map-get($map: $spacing, $key: borderRadius);
+  background: map-get($map: $colors, $key: borderLight);
+}
