@@ -53,7 +53,7 @@
   } @else if $font-size == jumbo {
     font-size: 2rem;
   } @else if $font-size == header {
-    font-size: clamp(3rem, 15vw, 12rem);
+    font-size: clamp(3rem, 10vw, 12rem);
   } @else {
     font-size: $font-size;
   }

@@ -4,9 +4,9 @@ import { Page } from "./types";
 const HOME: Page = {
   meta: {
     title:
-      "Drew Templeton | St. Charles based creator 💡, technology lover 🤓 and market enthusiast 📈",
+      "Drew Templeton | I'm St. Charles based creator who specializes in building custom apps, websites and software for companies of all sizes",
     description:
-      "I'm Drew, a full stack developer, designer and entrepreneur. As the founder of my own business, I specialize in building custom apps, websites, and software tailored to your needs.",
+      "I'm Drew, a full stack developer, designer and entrepreneur. I specialize in building custom apps, websites, and software tailored to your needs.",
   },
   components: [
     {
