@@ -1,5 +1,4 @@
 import Link from "next/link";
-import LogoSvg from "./logo";
 import styles from "./navigation.module.scss";
 
 export function Links() {
@@ -32,9 +31,6 @@ export default function Navigation() {
           alignItems: "center",
         }}
       >
-        {/* <Link href="/">
-          <LogoSvg className={styles["navigation-logo"]} />
-        </Link> */}
         <Link href="/">
           <h1>
             Drew

@@ -97,9 +97,13 @@
     flex-direction: column;
     gap: map-get($map: $spacing, $key: padding) / 2;
     border-radius: map-get($map: $spacing, $key: borderRadius);
-    background-color: 1px solid var(--background-secondary);
     border: 1px solid var(--border);
-    padding: map-get($map: $spacing, $key: padding) * 2;
+    background-color: var(--background-primary);
+    padding: map-get($map: $spacing, $key: padding);
+
+    @include breakpoint(medium, min) {
+      padding: map-get($map: $spacing, $key: padding) * 2;
+    }
 
     .card-content-copy {
       margin-top: map-get($map: $spacing, $key: padding) / 2
