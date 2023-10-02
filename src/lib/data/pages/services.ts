@@ -78,7 +78,7 @@ const SERVICES: Page = {
       data: {
         title: "What<br />I Do",
         copy: "Here is a rundown of the services that I can offer you.  Reach out if you have a special project that you don't think fits this list and I'd love to figure it out with you.",
-        button: { text: "Connect With Me" },
+        button: { text: "Connect With Me", link: { href: "/contact" } },
       },
     },
     {
