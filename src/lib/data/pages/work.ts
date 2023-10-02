@@ -93,6 +93,16 @@ export const workIndex: Page = {
   ],
 };
 
+export const workSlugs = [
+  "paintball-vault",
+  "pangobooks",
+  "studio-three",
+  "crowler",
+  "american-softgels",
+  "adage-financial-consultants",
+  "mercadito-hospitliaty",
+];
+
 const PAINTBALL_VAULT: Page = {
   slug: "paintball-vault",
   meta: {
