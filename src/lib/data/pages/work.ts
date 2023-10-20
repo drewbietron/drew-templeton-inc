@@ -198,7 +198,7 @@ const PANGOBOOKS: Page = {
       data: {
         title: "Empowering Buying & Selling Of Used Books",
         description:
-          "When Pangobooks approached us, they envisioned a seamless platform that would redefine the used book marketplace experience. Recognizing the power and flexibility of Next.js, we embarked on crafting a web application from the ground up. The result was a fast, responsive, and user-centric platform that not only met but exceeded Pangobooks' expectations.",
+          "Working with Pangobooks, they envisioned a seamless platform that would redefine the used book marketplace experience. Recognizing the power and flexibility of Next.js, we embarked on crafting a web application from the ground up. The result was a fast, responsive, and user-centric platform that not only met but exceeded Pangobooks' expectations.",
         cards: [
           {
             type: "photo",
@@ -229,7 +229,7 @@ const PANGOBOOKS: Page = {
       type: "row",
       data: {
         description:
-          "But our innovation didn't stop there. Pangobooks' existing React Native app needed a revamp to align with the new web experience. We strategically rearchitected the mobile app, leveraging the same page component system as the Next.js web app. This ensured a consistent and unified user experience across both platforms, streamlining development and maintenance processes.<br/><br/ >Today, Pangobooks stands as a testament to our commitment to excellence and innovation. With a cohesive brand presence on both web and mobile, they offer their users an unparalleled used book shopping experience.",
+          "It didn't stop there. Pangobooks' existing React Native app needed a revamp to align with the new web experience. We strategically rearchitected the mobile app, leveraging the same page component system as the Next.js web app. This ensured a consistent and unified user experience across both platforms, streamlining development and maintenance processes.",
       },
     },
   ],
