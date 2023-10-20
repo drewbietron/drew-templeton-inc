@@ -317,7 +317,7 @@ const CROWLER: Page = {
   meta: {
     title: "Drew Templeton | Crowler",
     description:
-      "Meet Crowler, the innovative beer discovery app. Using advanced image recognition and Expo, we've redefined how you find and enjoy your next brew.",
+      "Meet Crowler, the innovative beer discovery app. Using advanced image recognition and Expo, React Native and Postgres, we've redefined how you find and enjoy your next brew.",
   },
   components: [
     {
@@ -353,13 +353,6 @@ const CROWLER: Page = {
         ],
       },
     },
-    {
-      type: "row",
-      data: {
-        description:
-          "However, what truly sets Crowler apart is its personalized recommendation engine. By tying in users' individual preferences, the app not only showcases the ratings but also suggests beers that align with your taste profile. This blend of technology and personalization ensures that every beer recommendation is tailored just for you.<br /><br />The journey of crafting Crowler was as exhilarating as the beers it recommends. Designed meticulously from scratch using Expo, the app boasts a user-friendly interface, smooth performance, and a seamless experience, making beer discovery not just easy but also enjoyable.<br /><br />Today, Crowler stands as a testament to innovation, passion, and the love for a good brew, redefining the way beer enthusiasts explore the world of craft beers.",
-      },
-    },
   ],
 };
 
@@ -368,7 +361,7 @@ const AMERICAN_SOFTGELS: Page = {
   meta: {
     title: "Drew Templeton | American Softgels",
     description:
-      "Explore American Softgels' digital presence, crafted with precision. Our Next.js website combines custom aesthetics with SEO optimization, setting industry standards.",
+      "Explore American Softgels' digital presence, crafted with precision.  Their Next.js website combines custom aesthetics with SEO optimization.",
   },
   components: [
     {
@@ -386,7 +379,7 @@ const AMERICAN_SOFTGELS: Page = {
       data: {
         title: "Crafting a Digital Presence with Precision",
         description:
-          "In the digital age, even the most straightforward projects demand meticulous attention to detail and a commitment to excellence. When American Softgels approached us, their vision was clear: an informative website that not only encapsulated their brand ethos but also ensured they stood out in the vast expanse of the internet.<br /><br />Understanding the importance of discoverability, we prioritized SEO from the outset. Every site we craft is built with this in mind, and American Softgels was no exception. By leveraging the power and flexibility of Next.js, we designed a website that is not only responsive and user-friendly but also primed for optimal search engine performance.<br /><br />But our commitment didn't stop at functionality. Recognizing the importance of aesthetics in today's digital landscape, we embarked on creating custom styling for the website. The result? A unique digital presence that truly captures the essence of American Softgels, setting them apart in their industry.",
+          "In the digital age, even the most straightforward projects demand meticulous attention to detail and a commitment to excellence. Working with American Softgels, their vision was clear: an informative website that not only encapsulated their brand ethos but also ensured they stood out in the vast expanse of the internet.<br /><br />Understanding the importance of discoverability, we prioritized SEO from the outset. Every site we craft is built with this in mind, and American Softgels was no exception. By leveraging the power and flexibility of Next.js, we designed a website that is not only responsive and user-friendly but also primed for optimal search engine performance.<br /><br />But our commitment didn't stop at functionality. Recognizing the importance of aesthetics in today's digital landscape, we embarked on creating custom styling for the website. The result? A unique digital presence that truly captures the essence of American Softgels, setting them apart in their industry.",
       },
     },
     {
@@ -423,7 +416,7 @@ const ADAGE_FINANCIAL_CONSULTANTS: Page = {
   meta: {
     title: "Drew Templeton | Adage Financial Consultants",
     description:
-      "Step into the world of Adage Financial Consultants. With over 30 years of trusted advisory, our SEO-friendly website is where legacy meets digital excellence.",
+      "Adage Financial Consultants SEO-friendly website build using Next.js.",
   },
   components: [
     {
@@ -441,7 +434,7 @@ const ADAGE_FINANCIAL_CONSULTANTS: Page = {
       data: {
         title: "Building Trust Through Digital Excellence",
         description:
-          "For over three decades, Adage Financial Consultants have been a cornerstone in the local community, offering unparalleled financial advisory services. When they approached us to craft their digital presence, we recognized the gravity of the task at hand. After all, in the realm of financial consultancy, trust is paramount.<br /><br />While Adage Financial Consultants might have been a smaller project on paper, its significance was anything but. We embarked on a mission to create a website that not only reflected their rich legacy but also instilled confidence in potential clients. In the financial sector, a website is more than just a digital footprint; it's a testament to credibility and expertise.<br /><br />Harnessing the power of Next.js, we built a responsive and user-friendly platform. But beyond functionality, we prioritized design and aesthetics, ensuring that every element resonated with the brand's ethos and the trust they've cultivated over the years.",
+          "For over three decades, Adage Financial Consultants have been a cornerstone in the local community, offering financial advisory services.  We embarked on a mission to create a website that not only reflected their rich legacy but also instilled confidence in potential clients. In the financial sector, a website is more than just a digital footprint; it's a testament to credibility and expertise.<br /><br />Harnessing the power of Next.js, we built a responsive and user-friendly platform. But beyond functionality, we prioritized design and aesthetics, ensuring that every element resonated with the brand's ethos and the trust they've cultivated over the years.",
       },
     },
     {
@@ -467,7 +460,7 @@ const ADAGE_FINANCIAL_CONSULTANTS: Page = {
       type: "row",
       data: {
         description:
-          "SEO-friendliness was not just a checkbox for us; it was a necessity. We meticulously optimized the site to ensure that those seeking financial guidance could effortlessly discover Adage Financial Consultants.<br /><br />Today, Adage Financial Consultants' website stands as a beacon of trust in the digital realm, a testament to our unwavering commitment to excellence, no matter the project size.",
+          "SEO-friendliness was not just a checkbox for us; it was a necessity. We meticulously optimized the site to ensure that those seeking financial guidance could effortlessly discover Adage Financial Consultants.",
       },
     },
   ],
@@ -491,7 +484,7 @@ const MERCADITO_HOSPITALITY: Page = {
       type: "row",
       data: {
         description:
-          "Food photography was my first found passion in professional photography. I started working as a marketing intern for Mercadito Hospitality when I was in graduate school at DePaul and it afforded me some great opportunies to take lots of photos of lots of great food as well as expose me to the hospitality network in the best food city in the world. Here's some shots that I took both on the job, and for the hell of it. As a side note, people really think you take your shit seriously when you couple your reservation with a big ass camera. I kind of wish I could shrink my setup and draw less attention.",
+          "Food photography was my first found passion in professional photography. I working with Mercadito Hospitality afforded me some great opportunies to take lots of photos of lots of great food as well as expose me to the hospitality network in the best food city in the world. Here's some shots that I took both on the job.",
       },
     },
     {
