@@ -4,50 +4,12 @@
 @import '../styles/mixins/grid';
 
 .contact {
-  display: flex;
-  flex-direction: column;
-  gap: map-get($map: $spacing, $key: padding);
+  padding-bottom: 5vh;
 
-  label {
-    @include sub-heading();
-    display: block;
-    margin-bottom: .5rem;
+  &-email {
+    font-size: 1.5rem;
+    color: #0070f3;
+    text-decoration: underline;
+
   }
-
-  input,
-  textarea {
-    border: 1px solid var(--text-primary);
-    border-radius: map-get($map: $spacing, $key: borderRadius);
-    background-color: transparent;
-    color: var(--text-primary);
-    min-height: 3rem;
-    padding: map-get($map: $spacing, $key: padding) / 2 map-get($map: $spacing, $key: padding);
-    @include copy();
-    width: 100%;
-    max-width: 30rem;
-  }
-
-
-  textarea {
-    min-height: 15rem;
-  }
-
-  button {
-    width: auto;
-    margin-right: auto;
-  }
-
-   &-message {
-    padding: map-get($map: $spacing, $key: padding);
-    background-color: var(--primary);
-    border-radius: map-get($map: $spacing, $key: borderRadius);
-    @include copy();
-    color: var(--black);
-    width: 100%;
-    max-width: 30rem;
-
-     &--error {
-      background-color: var(--error);
-     }
-   }
 }
