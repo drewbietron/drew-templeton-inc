@@ -53,7 +53,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     description:
       "How I set technical and product direction for Gusto's Agent Framework — the AI platform under Gus and Gusto's internal tools — and won a large org over with working demos. A case study by Drew Templeton.",
     facts: [
-      { label: "Role", value: "Staff PM, AI" },
+      { label: "Role", value: "AI Platform Lead" },
       { label: "When", value: "08/2025 – 2026" },
       {
         label: "Domain",
@@ -81,7 +81,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       {
         heading: "What I did",
         paragraphs: [
-          "As lead PM for the Agent Framework team, I set both the technical and the product direction for the AI platform behind Gusto's internal tools and customer-facing products. Same playbook as Filevine, bigger org: get demos working, show them to the right people, then sit with each team to land on what to ship.",
+          "Embedded as lead of the Agent Framework team, I set both the technical and the product direction for the AI platform behind Gusto's internal tools and customer-facing products. Same playbook as Filevine, bigger org: get demos working, show them to the right people, then sit with each team to land on what to ship.",
           "The framework work is deliberately unglamorous — the primitives every agent at Gusto stands on — which is exactly why it's where an org becomes AI native or doesn't.",
         ],
       },
@@ -109,9 +109,9 @@ export const CASE_STUDIES: CaseStudy[] = [
     title: "Filevine: building the AI agent that became the flagship",
     metaTitle: "Filevine case study — building the flagship AI agent",
     description:
-      "How I embedded at Filevine as AI PM, built the customer-facing agent from scratch, and shipped the product now driving about half the company's ARR ahead of a $400M raise. A case study by Drew Templeton.",
+      "How I embedded at Filevine as the AI lead, built the customer-facing agent from scratch, and shipped the product now driving about half the company's ARR ahead of a $400M raise. A case study by Drew Templeton.",
     facts: [
-      { label: "Role", value: "Senior PM, AI" },
+      { label: "Role", value: "Embedded AI Lead" },
       { label: "When", value: "03/2024 – 08/2025" },
       {
         label: "Domain",
@@ -139,7 +139,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       {
         heading: "What I did",
         paragraphs: [
-          "I embedded as the AI PM and built the customer-facing agent from scratch — writing code, setting the technical direction, and owning the product end to end. Instead of pitching a roadmap, I got a working agent in front of people and let the demo make the argument. From there, I sat with legal-domain teams across the company to shape what shipped.",
+          "I embedded as the AI lead and built the customer-facing agent from scratch — writing code, setting the technical direction, and owning the product end to end. Instead of pitching a roadmap, I got a working agent in front of people and let the demo make the argument. From there, I sat with legal-domain teams across the company to shape what shipped.",
           "Alongside the agent, I built other AI features across the product — same pattern each time: prototype it myself, prove it works, then land it with the owning team.",
         ],
       },
@@ -169,28 +169,28 @@ export const CASE_STUDIES: CaseStudy[] = [
     description:
       "Randal is the native Mac agent platform I built to run my own businesses — durable memory, schedules, real channels, model routing — and the engine behind Paintball Vault, a $1M+ marketplace operated by one person.",
     facts: [
-      { label: "Role", value: "Founder · Hassion Studio" },
+      { label: "Role", value: "Founder" },
       { label: "When", value: "2023 – now" },
       { label: "What", value: "Native Mac agent app · randal.bot" },
       { label: "Proof", value: "Runs my businesses daily" },
     ],
     stats: [
       { value: "$1M+", label: "Paintball Vault sales, solo-operated" },
-      { value: "3 businesses", label: "marketplace, studio, and Randal itself" },
+      { value: "2 businesses", label: "the marketplace and Randal itself" },
       { value: "1 human", label: "plus a posse of agents" },
     ],
     sections: [
       {
         heading: "Why it exists",
         paragraphs: [
-          "Running a marketplace, a studio, and client work as one person only works if agents do real jobs — reliably, on schedule, with memory. Nothing off the shelf did that, so I built the harness myself. Randal started as internal tooling and became a product: an AI chassis — a native Mac app with durable memory, schedules, real channels, and model routing.",
+          "Running whole businesses as one person only works if agents do real jobs — reliably, on schedule, with memory. Nothing off the shelf did that, so I built the harness myself. Randal started as internal tooling and became a product: an AI chassis — a native Mac app with durable memory, schedules, real channels, and model routing.",
         ],
       },
       {
         heading: "What I built",
         paragraphs: [
           "The whole thing — product, engineering, design, and the business around it. Randal turns a Mac into an agent runner: it can use your apps the way you do, learn a workflow by watching you once, run alongside always-on cloud bots, and route each step to the model that does it best. Everything scoped, permissioned, and private by default.",
-          "It's also the engine behind [Paintball Vault](https://www.pbvault.com/) — a one-person marketplace past $1M in sales and growing — and my client work at Hassion Studio. Randal isn't a thesis about agents; it's the operating layer my companies actually run on.",
+          "It's also the engine behind [Paintball Vault](https://www.pbvault.com/) — a one-person marketplace past $1M in sales and growing. Randal isn't a thesis about agents; it's the operating layer my companies actually run on.",
         ],
       },
       {

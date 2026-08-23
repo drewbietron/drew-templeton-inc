@@ -95,8 +95,8 @@ export default function About() {
                   <a href={LINKS.randal} rel="me noopener">
                     randal.bot
                   </a>
-                  <a href={LINKS.hassion} rel="me noopener">
-                    hassion.studio
+                  <a href={LINKS.pbvault} rel="me noopener">
+                    pbvault.com
                   </a>
                 </dd>
               </div>

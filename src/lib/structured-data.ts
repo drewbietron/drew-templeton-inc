@@ -49,7 +49,7 @@ export function personSchema() {
       "React Native",
       "Marketplaces",
     ],
-    sameAs: [LINKS.randal, LINKS.hassion, LINKS.pbvault],
+    sameAs: [LINKS.randal, LINKS.pbvault],
     worksFor: { "@id": ORG_ID },
   };
 }

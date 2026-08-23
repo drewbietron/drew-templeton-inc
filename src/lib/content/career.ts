@@ -25,7 +25,7 @@ export interface Role {
 export const ROLES: Role[] = [
   {
     when: "2025 – now",
-    title: "Staff Product Manager, AI",
+    title: "AI Platform Lead",
     org: "Gusto",
     url: LINKS.gusto,
     desc: "Agent Framework, the platform behind Gus",
@@ -34,7 +34,7 @@ export const ROLES: Role[] = [
   },
   {
     when: "2024 – 2025",
-    title: "Senior Product Manager, AI",
+    title: "Embedded AI Lead",
     org: "Filevine",
     url: LINKS.filevine,
     desc: "built the flagship AI agent from scratch",
@@ -44,9 +44,9 @@ export const ROLES: Role[] = [
   {
     when: "2023 – now",
     title: "Founder",
-    org: "Hassion Studio",
-    url: LINKS.hassion,
-    desc: "AI studio; built Randal (randal.bot)",
+    org: "Randal",
+    url: LINKS.randal,
+    desc: "built the agent platform my companies run on (randal.bot)",
     era: "ai",
     internal: { href: "/case-studies/randal", label: "case study →" },
   },

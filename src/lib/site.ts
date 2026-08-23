@@ -35,7 +35,6 @@ export const GA_MEASUREMENT_ID =
 
 export const LINKS = {
   randal: "https://randal.bot",
-  hassion: "https://hassion.studio",
   pbvault: "https://www.pbvault.com/",
   gusto: "https://gusto.com/",
   filevine: "https://www.filevine.com/",

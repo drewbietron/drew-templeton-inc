@@ -20,8 +20,8 @@ export default function Footer() {
             </a>
           </li>
           <li>
-            <a href={LINKS.hassion} rel="me noopener">
-              hassion.studio
+            <a href={LINKS.pbvault} rel="me noopener">
+              pbvault.com
             </a>
           </li>
         </ul>
