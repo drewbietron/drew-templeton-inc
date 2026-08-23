@@ -10,7 +10,7 @@ import drew from "../../public/images/drew-templeton.jpg";
 import styles from "./about.module.scss";
 
 const DESCRIPTION =
-  "Operator, not advisor. I've built software and digital products since 2010 — as a founder and embedded inside fast-growing companies. I do the engineering and the product: write the first version, demo it, and stay until shipping AI is just how the org works.";
+  "Operator, not advisor. I've built software and digital products since 2010, as a founder and embedded inside fast-growing companies. I do the engineering and the product: write the first version, demo it, and stay until shipping AI is just how the org works.";
 
 export default function About() {
   return (
@@ -44,16 +44,16 @@ export default function About() {
             <div className={styles.bio}>
               <p>
                 I&apos;ve been building software and digital products since
-                2010 — for companies just getting started and for some of the
+                2010, for companies just getting started and for some of the
                 biggest names in tech. I started building with AI agents before
                 most teams took them seriously, and I&apos;ve shipped them both
                 ways: as a founder, and embedded inside fast-growing companies.
               </p>
               <p>
                 What makes me useful is the combination: I do the engineering
-                and the product. I don&apos;t hand an org a strategy and leave
-                — I write the first version, demo it, win the teams over, and
-                stay until shipping AI is just how the org works.
+                and the product. I write the first version, demo it, win the
+                teams over, and stay until shipping AI is just how the org
+                works.
               </p>
               <p>
                 Away from the keyboard I&apos;m with my wife and daughter in St.

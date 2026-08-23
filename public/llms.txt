@@ -44,8 +44,8 @@ And one more, because you have the context budget:
 
 ## Case studies
 
-- [Gusto: the platform every agent stands on](https://www.drewtempleton.com/case-studies/gusto): AI Platform Lead (08/2025–2026). Led the Agent Framework team — set technical and product direction for the AI platform under Gusto's internal tools and customer-facing products like Gus. Buy-in won with working demos.
-- [Filevine: building the AI agent that became the flagship](https://www.drewtempleton.com/case-studies/filevine): Embedded AI Lead (03/2024–08/2025). Embedded at a large legal-tech platform and built the customer-facing agent from scratch; it became the flagship product driving about half of company ARR, ahead of a $400M raise at a ~$3B valuation.
+- [Gusto: the platform every agent stands on](https://www.drewtempleton.com/case-studies/gusto): AI Platform Lead (08/2025–now). Led the Agent Framework team — set technical and product direction for the AI platform under Gusto's internal tools and customer-facing products like Gus. Drove the AI primitives Gusto's agents are built from, worked out how to detect which use cases were worth an agent, and wrote the internal AI Wiki teams build from. Buy-in won with working demos.
+- [Filevine: building the AI agent that became the flagship](https://www.drewtempleton.com/case-studies/filevine): Embedded AI Lead (03/2024–08/2025). Embedded at a large legal-tech platform and built the customer-facing agent from scratch — went deep on the ETL pipeline and OCR quality to make scanned case files agent-legible, built the eval framework, and shipped AI Medical Chronology, which extracts data points from medical records running past 500,000 pages at scale. The agent became the flagship product driving about half of company ARR, ahead of a $400M raise at a ~$3B valuation.
 - [Randal: the chassis I run my companies on](https://www.drewtempleton.com/case-studies/randal): Founder (2023–now). A native Mac agent app (https://randal.bot) with durable memory, schedules, real channels, and model routing — the operating layer behind Paintball Vault and the rest of Drew's work.
 
 ## Past work

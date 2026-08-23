@@ -58,7 +58,7 @@ export const ROLES: Role[] = [
     desc: "first marketplace for paintball, $1M+ in sales — now runs autonomously on Randal",
     era: "bridge",
     transition:
-      "Founded as a hand-run marketplace in the shipping years. When the agents arrived, it went fully AI-native — today listings, support, and the daily grind run autonomously on Randal, $1M+ and growing, headcount still one.",
+      "Founded as a hand-run marketplace in the shipping years. When the agents arrived it went fully AI-native: today the whole operation runs autonomously on Randal, $1M+ and growing, headcount still one.",
     internal: { href: "/past-work/paintball-vault", label: "project →" },
   },
   {

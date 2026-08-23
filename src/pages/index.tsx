@@ -24,7 +24,7 @@ import styles from "./index.module.scss";
 const PLAYBOOK = [
   {
     title: "Embed, don't advise",
-    copy: "I join the team as an operator — writing the code and owning the product, not producing recommendations from the outside.",
+    copy: "I join the team as an operator: I write the code and own the product, instead of sending recommendations in from the outside.",
   },
   {
     title: "Demo, don't deck",
@@ -32,7 +32,7 @@ const PLAYBOOK = [
   },
   {
     title: "Ship, then make it stick",
-    copy: "The goal isn't one feature — it's an org that keeps building. I leave behind platforms, patterns, and teams that adopted AI for real.",
+    copy: "One feature was never the goal. I leave behind platforms, patterns, and teams that keep building after I'm gone.",
   },
 ];
 
@@ -91,8 +91,8 @@ export default function Home() {
             <p className={classNames("lede", styles.heroLede)}>
               Product leader and full-stack engineer. Sometimes that means
               embedding inside a company like Filevine or Gusto and winning it
-              over demo by demo. Sometimes it means running my own — like
-              Paintball Vault, a $1M+ marketplace I operate entirely alone, on{" "}
+              over demo by demo. Sometimes it means running my own: Paintball
+              Vault, the marketplace I operate alone on{" "}
               <a href={LINKS.randal} rel="noopener">
                 Randal
               </a>
@@ -149,17 +149,16 @@ export default function Home() {
               Everything I ship runs on Randal. Your work can too.
             </h2>
             <p className={styles.randalLede}>
-              Randal is the agent harness I built to run my own companies — and
-              the platform I build most of my AI-native work on. It&apos;s a
+              Randal is the agent harness I built to run my own companies, and
+              the platform most of my AI-native work ships on. It&apos;s a
               native Mac app with durable memory, schedules, real channels, and
               model routing: agents that use your apps the way you do, learn a
               workflow by watching you once, and keep working alongside
               always-on cloud bots. Scoped, permissioned, private by default.
             </p>
             <p className={styles.randalLede}>
-              It&apos;s a product, not a side project — open for sign-ups, and
-              the same chassis that runs a $1M+ marketplace with a headcount of
-              one.
+              It&apos;s a real product, open for sign-ups today, and the same
+              chassis that runs the marketplace with a headcount of one.
             </p>
             <div className={styles.heroActions}>
               <a href={LINKS.randal} className="btn btn--primary" rel="noopener">
@@ -243,10 +242,10 @@ export default function Home() {
             placeholder="blur"
           />
           <p className={styles.aboutCopy}>
-            I&apos;m Drew — a St. Charles based creator 💡, technology lover 🤓
-            and market enthusiast 📈. When I&apos;m not building agents
-            I&apos;m playing paintball, a sport I&apos;ve competed in
-            professionally for nearly twenty years.{" "}
+            I&apos;m Drew. I live in St. Charles, Illinois with my wife and
+            daughter, and when I&apos;m not building agents I&apos;m on a
+            paintball field — a sport I&apos;ve competed in professionally for
+            nearly twenty years.{" "}
             <Link href="/about">More about me →</Link>
           </p>
         </section>

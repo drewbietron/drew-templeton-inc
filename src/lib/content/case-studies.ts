@@ -43,7 +43,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     slug: "gusto",
     name: "Gusto",
     card: {
-      when: "2025 – 2026",
+      when: "2025 – now",
       headline: "Led the Agent Framework behind Gus",
       summary:
         "Set technical and product direction for the AI platform under Gusto's internal tools and customer-facing products — and won a large org over with working demos.",
@@ -54,7 +54,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       "How I set technical and product direction for Gusto's Agent Framework — the AI platform under Gus and Gusto's internal tools — and won a large org over with working demos. A case study by Drew Templeton.",
     facts: [
       { label: "Role", value: "AI Platform Lead" },
-      { label: "When", value: "08/2025 – 2026" },
+      { label: "When", value: "08/2025 – now" },
       {
         label: "Domain",
         prefix: "Payroll & HR · ",
@@ -69,7 +69,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         value: "Internal + external",
         label: "back-office tools and customer-facing Gus",
       },
-      { value: "Demo-led", label: "buy-in won by showing, not telling" },
+      { value: "AI Wiki", label: "the internal playbook teams build from" },
     ],
     sections: [
       {
@@ -81,19 +81,20 @@ export const CASE_STUDIES: CaseStudy[] = [
       {
         heading: "What I did",
         paragraphs: [
-          "Embedded as lead of the Agent Framework team, I set both the technical and the product direction for the AI platform behind Gusto's internal tools and customer-facing products. Same playbook as Filevine, bigger org: get demos working, show them to the right people, then sit with each team to land on what to ship.",
-          "The framework work is deliberately unglamorous — the primitives every agent at Gusto stands on — which is exactly why it's where an org becomes AI native or doesn't.",
+          "Embedded as lead of the Agent Framework team, I set both the technical and the product direction for the AI platform behind Gusto's internal tools and customer-facing products. Same playbook as Filevine, bigger org: demos first, then land what ships with each team.",
+          "The other half of the job was making every team fast. I drove the AI primitives Gusto's agents are built from, worked out how to detect which use cases were actually worth an agent, and wrote the internal AI Wiki so teams could go from idea to shipped agent without me in the loop.",
+          "Platform work is deliberately unglamorous, and that's the point: the primitives are where an org becomes AI native or doesn't.",
         ],
       },
       {
         heading: "Where it stands",
         paragraphs: [
-          "The Agent Framework powers Gus and Gusto's internal agents today, and teams across the org build on it rather than around it. Buy-in came the honest way: not a mandate, but working software that made the case for itself.",
+          "The Agent Framework powers Gus and Gusto's internal agents today, and teams across the org build on it rather than around it. Nobody mandated that. The working software made the case.",
         ],
       },
     ],
     quote:
-      "You don't make a big org AI native with a strategy doc. You do it with a demo they can't ignore, then a platform they can't live without.",
+      "The platform succeeded the day teams started shipping agents without asking me first.",
     next: { slug: "filevine", label: "Filevine: the flagship agent →" },
     datePublished: "2026-08-23",
   },
@@ -123,7 +124,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     ],
     stats: [
       { value: "~50%", label: "of company ARR driven by the agent" },
-      { value: "0 → 1", label: "first working agent, built by me" },
+      { value: "500k+", label: "pages of medical records, read at scale" },
       {
         value: "$400M",
         label: "raised at a ~$3B valuation after it shipped",
@@ -133,25 +134,26 @@ export const CASE_STUDIES: CaseStudy[] = [
       {
         heading: "The situation",
         paragraphs: [
-          "Filevine is a large, established legal-tech platform — thousands of law firms run their cases on it. In early 2024 it had the classic big-company AI problem: enormous ambition, real customer demand, and no shipped agent. The organization needed someone who could do the product thinking and the engineering at the same time.",
+          "Filevine is a large, established legal-tech platform — thousands of law firms run their cases on it. In early 2024 it had the classic big-company AI problem: real customer demand and nothing shipped. It needed someone who could do the product thinking and the engineering at the same time.",
         ],
       },
       {
         heading: "What I did",
         paragraphs: [
-          "I embedded as the AI lead and built the customer-facing agent from scratch — writing code, setting the technical direction, and owning the product end to end. Instead of pitching a roadmap, I got a working agent in front of people and let the demo make the argument. From there, I sat with legal-domain teams across the company to shape what shipped.",
-          "Alongside the agent, I built other AI features across the product — same pattern each time: prototype it myself, prove it works, then land it with the owning team.",
+          "I embedded as the AI lead and built the customer-facing agent myself: writing the code, setting the technical direction, and owning the product end to end. Instead of pitching a roadmap, I got a working agent in front of people and let the demo make the argument.",
+          "Most of the real work sat below the waterline. Legal case files arrive as scanned paper, so I went deep on Filevine's ETL pipeline and OCR quality until case data was something an agent could actually reason over, and I built an eval framework so we measured whether answers got better instead of guessing.",
+          "The flagship use case was AI Medical Chronology: pulling the data points that matter from medical records that run past 500,000 pages, at scale. Then I took it to the users, teaching law firms how to work the tool, because legal teams don't adopt AI on faith. Alongside it, I prototyped other AI features across the product and landed each with its owning team.",
         ],
       },
       {
         heading: "What shipped",
         paragraphs: [
-          "The agent is now Filevine's flagship product, driving about half of the company's ARR — momentum that carried into a $400M raise at a roughly $3B valuation in 2025. More durable than the numbers: a legal-tech org that used to talk about AI now ships it — the teams I worked with kept building after I left.",
+          "The agent is now Filevine's flagship product, driving about half of the company's ARR — momentum that carried into a $400M raise at a roughly $3B valuation in 2025. More durable than the numbers: a legal-tech org that used to talk about AI now ships it. The teams I worked with kept building after I left.",
         ],
       },
     ],
     quote:
-      "Working software wins arguments. I built the demo, showed it, and the org followed.",
+      "The agent was the easy part. The job was making half a million pages of scanned paper legible to it.",
     next: { slug: "randal", label: "Randal: my own AI chassis →" },
     datePublished: "2026-08-23",
   },
@@ -167,7 +169,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     title: "Randal: the chassis I run my companies on",
     metaTitle: "Randal case study — the AI chassis I run my companies on",
     description:
-      "Randal is the native Mac agent platform I built to run my own businesses — durable memory, schedules, real channels, model routing — and the engine behind Paintball Vault, a $1M+ marketplace operated by one person.",
+      "Randal is the native Mac agent platform I built to run my own businesses: durable memory, schedules, real channels, model routing. It's the engine behind Paintball Vault, a $1M+ marketplace operated by one person.",
     facts: [
       { label: "Role", value: "Founder" },
       { label: "When", value: "2023 – now" },
@@ -183,26 +185,26 @@ export const CASE_STUDIES: CaseStudy[] = [
       {
         heading: "Why it exists",
         paragraphs: [
-          "Running whole businesses as one person only works if agents do real jobs — reliably, on schedule, with memory. Nothing off the shelf did that, so I built the harness myself. Randal started as internal tooling and became a product: an AI chassis — a native Mac app with durable memory, schedules, real channels, and model routing.",
+          "Running whole businesses as one person only works if agents do real jobs — reliably, on schedule, with memory. Nothing off the shelf did that, so I built the harness myself. Randal started as internal tooling and became a product: a native Mac app with durable memory, schedules, real channels, and model routing.",
         ],
       },
       {
         heading: "What I built",
         paragraphs: [
-          "The whole thing — product, engineering, design, and the business around it. Randal turns a Mac into an agent runner: it can use your apps the way you do, learn a workflow by watching you once, run alongside always-on cloud bots, and route each step to the model that does it best. Everything scoped, permissioned, and private by default.",
-          "It's also the engine behind [Paintball Vault](https://www.pbvault.com/) — a one-person marketplace past $1M in sales and growing. Randal isn't a thesis about agents; it's the operating layer my companies actually run on.",
+          "The whole thing: product, engineering, design, and the business around it. Randal turns a Mac into an agent runner: it can use your apps the way you do, learn a workflow by watching you once, run alongside always-on cloud bots, and route each step to the model that does it best. Everything scoped, permissioned, and private by default.",
+          "It's also the engine behind [Paintball Vault](https://www.pbvault.com/), a one-person marketplace past $1M in sales and growing — the operating layer my companies run on every day.",
         ],
       },
       {
         heading: "Why it matters to your org",
         paragraphs: [
-          "Randal is the strongest possible proof of the playbook: I don't just help companies adopt AI — I run companies on it. When I embed in your org, the patterns I bring were battle-tested here first, in production, with my own revenue on the line.",
+          "Randal is the strongest proof of the playbook: I run my own companies on AI, with my own revenue on the line. When I embed in your org, the patterns I bring were battle-tested here first, in production.",
           "And you don't need me in the building to use it. Randal is a product: sign up at [randal.bot](https://randal.bot), install the Mac app, and put the same harness to work on your own queue.",
         ],
       },
     ],
     quote:
-      "One person plus agents, running whole companies. That's not a pitch — it's my Tuesday.",
+      "One person plus agents, running whole companies. That's been my day job for years.",
     cta: { label: "Get Randal at randal.bot →", href: LINKS.randal },
     next: { slug: "gusto", label: "Gusto: the platform behind Gus →" },
     datePublished: "2026-08-23",
