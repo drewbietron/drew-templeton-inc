@@ -44,7 +44,7 @@ export default function PastWork() {
         <header className={styles.header}>
           <h1 className="h-page">Fifteen years of shipping</h1>
           <p className={classNames("lede", styles.lede)}>
-            Before the agents there was product, code, and design — as a
+            Before the agents there was product, code, and design, as a
             founder, a sole developer, and a product leader. The current,
             AI-native chapter lives in the{" "}
             <Link href="/#cases">case studies</Link>; this page is the longer

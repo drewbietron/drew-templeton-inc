@@ -69,7 +69,7 @@ export const WORK_ROWS: WorkRow[] = [
     name: "PangoBooks",
     meta: "CPO · 2021–2022",
     blurb:
-      "Sole developer of the web app and the native-app rebuild — both still in production today. Owned product and engineering across web and native.",
+      "Sole developer of the web app and the native-app rebuild as CPO — both still in production today.",
     tags: ["App", "Web"],
     image: { src: pb50637, alt: "PangoBooks app on a phone" },
     page: "pangobooks",
@@ -80,7 +80,7 @@ export const WORK_ROWS: WorkRow[] = [
     name: "Reverb",
     meta: "EARLY EMPLOYEE → ETSY ACQUISITION · 2015–2021",
     blurb:
-      "One of the first few employees at the marketplace for musicians — helped grow it into a much larger company, through its acquisition by Etsy. Along the way: led product and engineering for Reverb Sites and Reverb Lessons, built the no-code website generator with SSL and full e-commerce, and built the company's design system.",
+      "One of the first few employees at the marketplace for musicians, and there through its acquisition by Etsy. Led product and engineering for Reverb Sites and Reverb Lessons, built the no-code website generator with SSL and full e-commerce, and built the company's design system.",
     tags: ["Product", "Engineering"],
     url: LINKS.reverb,
     urlLabel: "reverb.com",
@@ -197,13 +197,13 @@ export const PROJECTS: Project[] = [
       {
         heading: "A web app from the ground up",
         paragraphs: [
-          "PangoBooks envisioned a platform that would redefine the used-book marketplace experience. As CPO — and the company's sole developer — I built the Next.js web application from scratch: fast, responsive, and user-centric.",
+          "PangoBooks is a marketplace for secondhand books. As CPO, and the company's only developer, I built the Next.js web app from the ground up and shipped it.",
         ],
       },
       {
         heading: "One component system, two platforms",
         paragraphs: [
-          "The existing React Native app then got rearchitected around the same page-component system as the web app — one unified experience across platforms, and one codebase philosophy that made development and maintenance dramatically simpler. Both apps are still in production today.",
+          "Then I re-architected the existing React Native app around the same page-component system as the web app: one design language, one set of patterns, far less to maintain. Both apps are still in production today.",
         ],
       },
     ],
@@ -229,7 +229,7 @@ export const PROJECTS: Project[] = [
       {
         heading: "The whole studio, not just the shoot",
         paragraphs: [
-          "I helped formulate Studio Three's initial brand entirely — identity, voice, and launch — then built the web app behind the studio's scheduling system and worked on the buildout of the studios themselves, making sure the physical spaces were tech-enabled from day one.",
+          "I built Studio Three's brand from zero: identity, voice, and launch. Then came the web app behind the studio's scheduling system and the buildout of the studios themselves, physical spaces that were tech-enabled from day one.",
         ],
       },
       {
@@ -264,7 +264,7 @@ export const PROJECTS: Project[] = [
     description:
       "Crowler was a beer-label recognition app I co-founded in 2015: point your camera at a can, get the beer and its ratings — image recognition wired up by hand before vision APIs existed.",
     intro: "Point your camera at a beer label — know the beer.",
-    chips: ["Co-founder", "2015 · the before times", "Image recognition", "Expo · React Native · Postgres"],
+    chips: ["Co-founder", "2015 · the before times", "Image recognition"],
     sections: [
       {
         heading: "Beer discovery, solved in-store",
@@ -275,7 +275,7 @@ export const PROJECTS: Project[] = [
       {
         heading: "In 2015, this was hard",
         paragraphs: [
-          "Today you'd hand this to any vision model over lunch. We built it in 2015 — no foundation models, no vision APIs worth the name — wiring up image recognition by hand and shipping it to a phone. The app is a museum piece now; the instinct isn't. I've been betting on machines that can see and reason for a decade, and these days the bets pay off in production.",
+          "Today you'd hand this to any vision model over lunch. We built it in 2015, with no foundation models and no vision APIs worth the name: image recognition wired up by hand and shipped to a phone. The app is a museum piece now, but it marks the start of a pattern. I've been betting on machines that can see and reason for a decade, and these days the bets pay off in production.",
         ],
       },
     ],
