@@ -21,7 +21,7 @@ export const EMAIL = "drew@drewtempleton.com";
 export const TWITTER_HANDLE: string | undefined = undefined;
 
 export const DEFAULT_DESCRIPTION =
-  "I make companies AI native — including my own. Product leader and full-stack engineer: I embed inside orgs like Filevine and Gusto, ship the agents myself, and run my own businesses on Randal, the agent platform I built.";
+  "I make companies AI native, including my own. Product leader and full-stack engineer: I embed inside orgs like Filevine and Gusto, ship the agents myself, and run my own businesses on Randal, the agent platform I built.";
 
 export const DEFAULT_OG_IMAGE = `${SITE_URL}/og/default.png`;
 
