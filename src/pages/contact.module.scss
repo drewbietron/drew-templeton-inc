@@ -1,15 +1,50 @@
-@import '../styles/config/';
-@import '../styles/mixins/content-max-width';
-@import '../styles/mixins/typography';
-@import '../styles/mixins/grid';
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  padding-top: 64px;
+  padding-bottom: 104px;
+  max-width: calc(var(--container));
+}
 
-.contact {
-  padding-bottom: 5vh;
+.lede {
+  max-width: 52ch;
+}
 
-  &-email {
-    font-size: 1.5rem;
-    color: #0070f3;
-    text-decoration: underline;
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 6px;
+}
 
+.details {
+  margin: 18px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-family: var(--font-mono);
+  font-size: 14px;
+
+  > div {
+    display: flex;
+    gap: 14px;
+  }
+
+  dt {
+    color: var(--ink-3);
+    text-transform: uppercase;
+    min-width: 5ch;
+  }
+
+  dd {
+    margin: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .page {
+    padding-top: 44px;
+    padding-bottom: 72px;
   }
 }

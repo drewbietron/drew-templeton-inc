@@ -1,73 +1,69 @@
-import { getServerSideSitemapLegacy, ISitemapField } from "next-sitemap";
-import { GetServerSideProps, GetServerSidePropsContext } from "next";
-import { serviceKeys } from "../lib/data/pages/services";
-import { workSlugs } from "../lib/data/pages/work";
+import { GetServerSideProps } from "next";
+import { CASE_STUDIES } from "../lib/content/case-studies";
+import { PROJECTS } from "../lib/content/past-work";
+import { absoluteUrl } from "../lib/site";
 
-export const getServerSideProps: GetServerSideProps = async (
-  ctx: GetServerSidePropsContext
-) => {
-  function url(path: string) {
-    if (
-      !process.env.NEXT_PUBLIC_WEB_URL &&
-      process.env.NODE_ENV === "production"
-    ) {
-      throw new Error("NEXT_PUBLIC_WEB_URL is not set");
-    }
-    return `${process.env.NEXT_PUBLIC_WEB_URL || ""}/${path}`;
-  }
+/**
+ * Hand-rolled sitemap. Kept server-side so it always reflects the content
+ * modules, and so the URL set stays tiny and accurate (no junk routes).
+ */
+const LAST_DESIGN_UPDATE = "2026-08-23";
 
-  function serviceUrls(): ISitemapField[] {
-    return serviceKeys.map((service) => {
-      return {
-        loc: `${url(`services/${service}`)}`,
-        lastmod: new Date().toISOString(),
-        changefreq: "always",
-      };
-    });
-  }
+interface Entry {
+  path: string;
+  priority: string;
+  changefreq: string;
+  lastmod?: string;
+}
 
-  function workUrls(): ISitemapField[] {
-    return workSlugs.map((workSlug) => {
-      return {
-        loc: `${url(`work/${workSlug}`)}`,
-        lastmod: new Date().toISOString(),
-        changefreq: "always",
-      };
-    });
-  }
-
-  const fields: ISitemapField[] = [
-    {
-      loc: process.env.NEXT_PUBLIC_WEB_URL || "",
-      lastmod: new Date().toISOString(),
-      changefreq: "always",
-    },
-    {
-      loc: url("about"),
-      lastmod: new Date().toISOString(),
-      changefreq: "always",
-    },
-    {
-      loc: url("contact"),
-      lastmod: new Date().toISOString(),
-      changefreq: "always",
-    },
-    {
-      loc: url("services"),
-      lastmod: new Date().toISOString(),
-      changefreq: "always",
-    },
-    ...serviceUrls(),
-    {
-      loc: url("work"),
-      lastmod: new Date().toISOString(),
-      changefreq: "always",
-    },
-    ...workUrls(),
+function entries(): Entry[] {
+  return [
+    { path: "/", priority: "1.0", changefreq: "monthly" },
+    { path: "/about", priority: "0.8", changefreq: "monthly" },
+    { path: "/contact", priority: "0.6", changefreq: "yearly" },
+    { path: "/past-work", priority: "0.7", changefreq: "monthly" },
+    ...CASE_STUDIES.map((c) => ({
+      path: `/case-studies/${c.slug}`,
+      priority: "0.9",
+      changefreq: "monthly",
+      lastmod: c.datePublished,
+    })),
+    ...PROJECTS.map((p) => ({
+      path: `/past-work/${p.slug}`,
+      priority: "0.6",
+      changefreq: "yearly",
+      lastmod: p.datePublished,
+    })),
   ];
+}
 
-  return getServerSideSitemapLegacy(ctx, fields);
+export const getServerSideProps: GetServerSideProps = async ({ res }) => {
+  const xml =
+    `<?xml version="1.0" encoding="UTF-8"?>\n` +
+    `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
+    entries()
+      .map(
+        (e) =>
+          `  <url>\n` +
+          `    <loc>${absoluteUrl(e.path)}</loc>\n` +
+          `    <lastmod>${e.lastmod || LAST_DESIGN_UPDATE}</lastmod>\n` +
+          `    <changefreq>${e.changefreq}</changefreq>\n` +
+          `    <priority>${e.priority}</priority>\n` +
+          `  </url>`
+      )
+      .join("\n") +
+    `\n</urlset>\n`;
+
+  res.setHeader("Content-Type", "application/xml; charset=utf-8");
+  res.setHeader(
+    "Cache-Control",
+    "public, s-maxage=86400, stale-while-revalidate=604800"
+  );
+  res.write(xml);
+  res.end();
+  return { props: {} };
 };
 
-// Default export to prevent next.js errors
-export default function Sitemap() {}
+export default function Sitemap() {
+  return null;
+}

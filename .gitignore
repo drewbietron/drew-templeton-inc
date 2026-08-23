@@ -29,8 +29,10 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# local env files
-.env*.local
+# env files — never commit these; set NEXT_PUBLIC_* in Vercel project settings
+.env
+.env.*
+!.env.example
 
 # vercel
 .vercel

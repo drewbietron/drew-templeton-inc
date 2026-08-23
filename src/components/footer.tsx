@@ -1,31 +1,31 @@
-import Link from "next/link";
-import LogoSvg from "./logo";
+import { ADDRESS, EMAIL, LEGAL_NAME, LINKS } from "../lib/site";
 import styles from "./footer.module.scss";
-import { Links } from "./navigation";
 
 export default function Footer() {
+  const year = new Date().getFullYear();
   return (
-    <footer className={styles.footer}>
-      <div className={styles["footer-container"]}>
-        <Link href="/">
-          <LogoSvg className={styles["footer-logo"]} />
-        </Link>
-        <h1 style={{ display: "none" }}>Drew Templeton</h1>
-        <div className={styles["footer-contact-container"]}>
-          <Links />
-          <address>
-            Drew Templeton, Inc.
-            <br />
-            3833 E Main St #1181
-            <br />
-            Saint Charles, IL 60174
-            <br />
-            <a href="mailto:drew@drewtempleton.com">drew@drewtempleton.com</a>
-            <br />
-          </address>
-        </div>
+    <footer className="container">
+      <div className={styles.footer}>
+        <address className={styles.copyright}>
+          © {year} {LEGAL_NAME} · {ADDRESS.street}, {ADDRESS.city},{" "}
+          {ADDRESS.region} {ADDRESS.zip}
+        </address>
+        <ul className={styles.links}>
+          <li>
+            <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
+          </li>
+          <li>
+            <a href={LINKS.randal} rel="me noopener">
+              randal.bot
+            </a>
+          </li>
+          <li>
+            <a href={LINKS.hassion} rel="me noopener">
+              hassion.studio
+            </a>
+          </li>
+        </ul>
       </div>
-      <p>Made With ❤️ | Drew Templeton Inc. | 2023</p>
     </footer>
   );
 }

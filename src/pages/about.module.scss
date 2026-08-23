@@ -1,72 +1,108 @@
-@import '../styles/config/';
-@import '../styles/mixins/content-max-width';
-@import '../styles/mixins/typography';
-@import '../styles/mixins/grid';
+.hero {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 48px;
+  align-items: start;
+  padding: 64px 0;
+}
 
-.about {
-  // display: flex;
-  // justify-content: space-evenly;
+.copy {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  min-width: 0;
+}
 
+.bio {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--ink);
+  max-width: 62ch;
+}
 
-  &-bio {
-    margin-top: map-get($map: $spacing, $key: paddingDynamicLarge);
+.side {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 0;
+}
 
-    h2 {
-      @include heading(large);
-      margin-bottom: map-get($map: $spacing, $key: padding);
-    }
+.portrait {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-lg);
+  object-fit: cover;
+}
 
-    p {
-      @include copy(base, false, true);
-      margin-bottom: map-get($map: $spacing, $key: padding)
-    }
+.facts {
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 22px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  font-family: var(--font-mono);
+  font-size: 13px;
 
-    &-image {
-      display: flex;
-      flex-direction: "row";
-      gap: map-get($map: $spacing, $key: padding) ;
-
-       &-container {
-        position: relative;
-        width: 10rem;
-        min-width: 10rem;
-        height: auto;
-       }
-
-      img {
-        width: 100%;
-        border-radius: map-get($map: $spacing, $key: borderRadius);
-      }
-    }
-
+  > div {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
   }
 
-  &-photos {
-    @include grid(4, map-get($map: $spacing, $key: padding));
-    margin-bottom: map-get($map: $spacing, $key: padding);
-
-    figure {
-      text-align: center;
-
-      img {
-        border-radius: 50%;
-        margin-bottom: map-get($map: $spacing, $key: padding);
-      }
-
-      h2 {
-        @include heading(large);
-        margin-bottom: map-get($map: $spacing, $key: padding) / 2;
-      }
-
-      p {
-        @include copy();
-      }
-
-      span {
-        @include copy(tiny);
-      }
-    }
+  dt {
+    color: var(--ink-3);
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
   }
 
+  dd {
+    margin: 0;
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+}
 
+.right {
+  text-align: right;
+}
+
+.elsewhere {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.timeline {
+  margin-bottom: 96px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.timelineTitle {
+  font-size: 30px;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 44px 0;
+    gap: 36px;
+  }
+  .bio {
+    font-size: 17px;
+  }
+  .timeline {
+    margin-bottom: 64px;
+  }
+  .timelineTitle {
+    font-size: 26px;
+  }
 }

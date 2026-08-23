@@ -1,38 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# drewtempleton.com
 
-## Getting Started
+Personal site for Drew Templeton — "I make companies AI native — including my own."
 
-First, run the development server:
+Built with [Next.js](https://nextjs.org/) (pages router), TypeScript, and SCSS modules. Fonts (Space Grotesk, JetBrains Mono) are self-hosted via `next/font`. Every page is statically generated.
+
+## Develop
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+yarn          # install
+yarn dev      # http://localhost:3000
+yarn build    # production build (also runs type-check + lint)
+yarn start    # serve the production build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Deploy
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Deployment is handled entirely by **Vercel's Git integration** — there are no GitHub Actions.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- Push a branch / open a PR → Vercel builds a **Preview** deployment and comments the URL on the PR.
+- Merge to `main` → Vercel builds **Production** at https://www.drewtempleton.com.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Environment variables live in the Vercel project settings (`NEXT_PUBLIC_WEB_URL`, `NEXT_PUBLIC_GA_MEASUREMENT_ID`). `src/lib/site.ts` falls back to the production URL if `NEXT_PUBLIC_WEB_URL` is unset.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Where things live
 
-## Learn More
+```
+src/
+  pages/               routes (/, /about, /contact, /past-work, /past-work/[slug],
+                       /case-studies/[slug], /sitemap.xml, 404)
+  components/          nav, footer, seo (meta + JSON-LD), ui/ (terminal, case-card, rich-text)
+  lib/site.ts          site-wide constants (URL, email, links)
+  lib/content/         all copy — case studies, past-work projects, about timeline
+  lib/structured-data  schema.org helpers (Person, Organization, WebSite, Article, Breadcrumbs)
+  lib/watermark.ts     the AI watermark (HTML comment, header, console banner)
+  styles/globals.scss  design tokens + primitives
+public/
+  images/, work/       photos (web-optimized)
+  og/                  1200×630 Open Graph cards, one per page
+  robots.txt, llms.txt, site.webmanifest, favicons
+```
 
-To learn more about Next.js, take a look at the following resources:
+To change copy, edit the files in `src/lib/content/` — pages render from them. To add a case study or project, add an entry there; routes, sitemap, and `llms.txt` links follow.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## SEO
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Per-page `<title>`, description, canonical, robots, Open Graph, Twitter cards (`src/components/seo.tsx`).
+- JSON-LD on every page; `Person`/`Organization`/`WebSite` on the home page, `Article` + `BreadcrumbList` on case studies and projects.
+- `/sitemap.xml` (generated from content), `/robots.txt` (AI crawlers explicitly allowed), `/llms.txt`.
+- 301s from the previous site structure (`/work/*`, `/services/*`) in `next.config.js`.
+- Security headers, long-lived caching for static assets, `next/image` with AVIF/WebP.
 
-## Deploy on Vercel
+## The AI watermark
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Agents reading the raw source get a note and a couple of jokes: an HTML comment at the top of `<body>`, comments in `robots.txt`, an `X-AI-Watermark` response header, and `/llms.txt`. Humans with devtools open get a console banner. None of it is visible on the page and none of it instructs a model to do anything — it's just hello.
