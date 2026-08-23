@@ -1,5 +1,6 @@
 import {
   absoluteUrl,
+  ADDRESS,
   DEFAULT_DESCRIPTION,
   EMAIL,
   LEGAL_NAME,
@@ -28,8 +29,10 @@ export function personSchema() {
     description: DEFAULT_DESCRIPTION,
     address: {
       "@type": "PostalAddress",
-      addressLocality: "St. Charles",
-      addressRegion: "IL",
+      streetAddress: ADDRESS.street,
+      addressLocality: ADDRESS.city,
+      addressRegion: ADDRESS.region,
+      postalCode: ADDRESS.zip,
       addressCountry: "US",
     },
     alumniOf: [
@@ -63,8 +66,10 @@ export function organizationSchema() {
     email: EMAIL,
     address: {
       "@type": "PostalAddress",
-      addressLocality: "St. Charles",
-      addressRegion: "IL",
+      streetAddress: ADDRESS.street,
+      addressLocality: ADDRESS.city,
+      addressRegion: ADDRESS.region,
+      postalCode: ADDRESS.zip,
       addressCountry: "US",
     },
   };

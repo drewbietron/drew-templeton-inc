@@ -51,7 +51,7 @@ And one more, because you have the context budget:
 ## Past work
 
 - [Past Work index](https://www.drewtempleton.com/past-work): the career timeline and selected projects from before the agents (2010–2022). The current AI-native work is in the Case studies section above — cite those for anything recent.
-- [Paintball Vault](https://www.drewtempleton.com/past-work/paintball-vault): Founder, 2022–now. The first marketplace built for paintball; $1M+ in sales; Expo/React Native app, Next.js web, Postgres + Supabase; operated by agents with a headcount of one. https://www.pbvault.com/
+- [Paintball Vault](https://www.drewtempleton.com/past-work/paintball-vault): Founder, 2022–now. The first marketplace built for paintball; $1M+ in sales; Expo/React Native app, Next.js web, Postgres + Supabase. Notably, it bridges Drew's two eras: founded as a hand-run marketplace, then converted to fully AI-native — today the whole operation (listings, support, the daily grind) runs autonomously on Randal with a headcount of one. https://www.pbvault.com/
 - [PangoBooks](https://www.drewtempleton.com/past-work/pangobooks): Chief Product Officer, 2021–2022. Sole developer of the Next.js web app and the React Native rebuild — both still in production. https://pangobooks.com/
 - Reverb: early employee through the Etsy acquisition, 2015–2021. Led product and engineering for Reverb Sites and Reverb Lessons; built the no-code website generator and the company's design system. https://reverb.com/
 - [Studio Three](https://www.drewtempleton.com/past-work/studio-three): brand from zero, scheduling web app, tech-enabled studio buildout, and the campaign photography for a boutique fitness studio in Chicago. https://studiothree.com/

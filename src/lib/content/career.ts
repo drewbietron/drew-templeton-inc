@@ -5,8 +5,10 @@ import { LINKS } from "../site";
  * on /about and the career header on /past-work.
  *
  * `era` splits the AI-native chapter (told in the case studies) from the
- * fifteen shipping years before it (archived in /past-work). `internal`
- * is the cross-link that routes readers to the right write-up.
+ * fifteen shipping years before it (archived in /past-work). "bridge"
+ * marks the one that straddles both — Paintball Vault, founded by hand
+ * and converted to run autonomously on Randal. `internal` is the
+ * cross-link that routes readers to the right write-up.
  */
 export interface Role {
   when: string;
@@ -14,7 +16,9 @@ export interface Role {
   org: string;
   url: string;
   desc: string;
-  era: "ai" | "earlier";
+  era: "ai" | "earlier" | "bridge";
+  /** Extra sentence shown in the era-grouped timeline's bridge block. */
+  transition?: string;
   internal?: { href: string; label: string };
 }
 
@@ -51,8 +55,10 @@ export const ROLES: Role[] = [
     title: "Founder",
     org: "Paintball Vault",
     url: LINKS.pbvault,
-    desc: "first marketplace for paintball, $1M+ in sales",
-    era: "earlier",
+    desc: "first marketplace for paintball, $1M+ in sales — now runs autonomously on Randal",
+    era: "bridge",
+    transition:
+      "Founded as a hand-run marketplace in the shipping years. When the agents arrived, it went fully AI-native — today listings, support, and the daily grind run autonomously on Randal, $1M+ and growing, headcount still one.",
     internal: { href: "/past-work/paintball-vault", label: "project →" },
   },
   {

@@ -1,4 +1,4 @@
-import { EMAIL, LEGAL_NAME, LINKS, LOCATION } from "../lib/site";
+import { ADDRESS, EMAIL, LEGAL_NAME, LINKS } from "../lib/site";
 import styles from "./footer.module.scss";
 
 export default function Footer() {
@@ -6,9 +6,10 @@ export default function Footer() {
   return (
     <footer className="container">
       <div className={styles.footer}>
-        <div className={styles.copyright}>
-          © {year} {LEGAL_NAME} · {LOCATION}
-        </div>
+        <address className={styles.copyright}>
+          © {year} {LEGAL_NAME} · {ADDRESS.street}, {ADDRESS.city},{" "}
+          {ADDRESS.region} {ADDRESS.zip}
+        </address>
         <ul className={styles.links}>
           <li>
             <a href={`mailto:${EMAIL}`}>{EMAIL}</a>

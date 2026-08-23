@@ -11,6 +11,12 @@ export const SITE_NAME = "Drew Templeton";
 export const SITE_TITLE_SUFFIX = " · Drew Templeton";
 export const LEGAL_NAME = "Drew Templeton, Inc.";
 export const LOCATION = "St. Charles, IL";
+export const ADDRESS = {
+  street: "3833 E Main St #1181",
+  city: "Saint Charles",
+  region: "IL",
+  zip: "60174",
+};
 export const EMAIL = "drew@drewtempleton.com";
 export const TWITTER_HANDLE: string | undefined = undefined;
 
