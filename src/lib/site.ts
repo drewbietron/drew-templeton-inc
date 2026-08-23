@@ -12,7 +12,6 @@ export const SITE_TITLE_SUFFIX = " · Drew Templeton";
 export const LEGAL_NAME = "Drew Templeton, Inc.";
 export const LOCATION = "St. Charles, IL";
 export const EMAIL = "drew@drewtempleton.com";
-export const PHONE = "314.494.0869";
 export const TWITTER_HANDLE: string | undefined = undefined;
 
 export const DEFAULT_DESCRIPTION =

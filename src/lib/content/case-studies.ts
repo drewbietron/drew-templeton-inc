@@ -174,6 +174,11 @@ export const CASE_STUDIES: CaseStudy[] = [
       { label: "What", value: "Native Mac agent app · randal.bot" },
       { label: "Proof", value: "Runs my businesses daily" },
     ],
+    stats: [
+      { value: "$1M+", label: "Paintball Vault sales, solo-operated" },
+      { value: "3 businesses", label: "marketplace, studio, and Randal itself" },
+      { value: "1 human", label: "plus a posse of agents" },
+    ],
     sections: [
       {
         heading: "Why it exists",

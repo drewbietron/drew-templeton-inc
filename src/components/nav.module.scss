@@ -1,11 +1,12 @@
+/* Inner row: the rule and padding live here so the line aligns with the
+   page content edges (inside the container gutter), as in the design. */
 .nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 14px;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding: 24px 0;
   border-bottom: 1px solid var(--line);
 }
 

@@ -1,7 +1,7 @@
+/* Inner row: rule + padding inset to the content edges, per the design. */
 .footer {
   border-top: 1px solid var(--line);
-  padding-top: 32px;
-  padding-bottom: 44px;
+  padding: 32px 0 44px;
   display: flex;
   justify-content: space-between;
   align-items: center;

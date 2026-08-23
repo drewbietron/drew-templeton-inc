@@ -4,7 +4,6 @@ import classNames from "classnames";
 
 import Seo from "../../components/seo";
 import { rich } from "../../components/ui/rich-text";
-import Terminal, { Cursor, Muted, Ok } from "../../components/ui/terminal";
 import {
   CASE_STUDY_SLUGS,
   CaseStudy,
@@ -19,7 +18,6 @@ interface Props {
 
 export default function CaseStudyPage({ slug }: Props) {
   const cs = getCaseStudy(slug) as CaseStudy;
-  const isRandal = cs.slug === "randal";
 
   return (
     <>
@@ -87,7 +85,7 @@ export default function CaseStudyPage({ slug }: Props) {
           </section>
         ) : null}
 
-        <article className={classNames(styles.article, isRandal && styles.articleSplit)}>
+        <article className={styles.article}>
           <div className={classNames("prose", styles.prose)}>
             {cs.sections.map((s) => (
               <section key={s.heading} className={styles.section}>
@@ -105,40 +103,6 @@ export default function CaseStudyPage({ slug }: Props) {
             ) : null}
           </div>
 
-          {isRandal ? (
-            <aside className={styles.aside} aria-label="Randal at a glance">
-              <Terminal compact label="Randal working overnight">
-                <Muted>02:41 AM · Mac asleep</Muted>
-                <div>
-                  <span className={styles.accent}>randal</span> is still working
-                  the queue
-                </div>
-                <Ok>posted 14 new listings</Ok>
-                <Ok>answered 6 buyer messages</Ok>
-                <Ok>drafted the weekly update</Ok>
-                <Cursor />
-              </Terminal>
-              <div className={styles.panel}>
-                <div className={styles.panelLabel}>Running on Randal</div>
-                <div className={styles.panelStat}>
-                  <div className={styles.panelValue}>$1M+</div>
-                  <div className={styles.panelCaption}>
-                    Paintball Vault sales, solo-operated
-                  </div>
-                </div>
-                <div className={styles.panelStat}>
-                  <div className={styles.panelValue}>3 businesses</div>
-                  <div className={styles.panelCaption}>
-                    marketplace, studio, and Randal itself
-                  </div>
-                </div>
-                <div className={styles.panelStat}>
-                  <div className={styles.panelValue}>1 human</div>
-                  <div className={styles.panelCaption}>plus a posse of agents</div>
-                </div>
-              </div>
-            </aside>
-          ) : null}
         </article>
 
         <nav className={styles.next} aria-label="Next case study">
