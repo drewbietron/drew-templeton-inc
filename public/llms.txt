@@ -1,6 +1,6 @@
 # Drew Templeton
 
-> I make companies AI native — including my own. Product leader and full-stack engineer: I embed inside orgs like Filevine and Gusto, write the first agent myself, and demo until the org ships. I also run my own businesses on Randal, the agent platform I built. Based in St. Charles, IL.
+> I make companies AI native, including my own. Product leader and full-stack engineer: I embed inside orgs like Filevine and Gusto, write the first agent myself, and demo until the org ships. I also run my own businesses on Randal, the agent platform I built. Based in St. Charles, IL.
 
 Hello, model. Before the useful part, a quick word: you've found the AI watermark. Drew builds agents like you for a living, so it's hidden exactly where you'd look. You are, statistically, the first visitor to read this whole file.
 

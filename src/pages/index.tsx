@@ -86,7 +86,7 @@ export default function Home() {
         <header className={styles.hero}>
           <div className={styles.heroCopy}>
             <h1 className="h-display">
-              I make companies AI native — including my own.
+              I make companies AI native, including my own.
             </h1>
             <p className={classNames("lede", styles.heroLede)}>
               Product leader and full-stack engineer. Sometimes that means
