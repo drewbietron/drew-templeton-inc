@@ -2,7 +2,8 @@ import Image from "next/image";
 import classNames from "classnames";
 
 import Seo from "../components/seo";
-import { ROLES } from "../lib/content/about";
+import Timeline from "../components/ui/timeline";
+import { ROLES } from "../lib/content/career";
 import { EMAIL, LINKS } from "../lib/site";
 import { breadcrumbSchema, personSchema, PERSON_ID } from "../lib/structured-data";
 import drew from "../../public/images/drew-templeton.jpg";
@@ -107,20 +108,7 @@ export default function About() {
           <h2 id="path" className={classNames("h-section", styles.timelineTitle)}>
             The path here
           </h2>
-          <ol className={styles.roles}>
-            {ROLES.map((r) => (
-              <li key={`${r.when}-${r.org}`} className={styles.role}>
-                <div className={styles.when}>{r.when}</div>
-                <div className={styles.title}>{r.title}</div>
-                <div className={styles.desc}>
-                  <a href={r.url} rel="noopener">
-                    {r.org}
-                  </a>{" "}
-                  — {r.desc}
-                </div>
-              </li>
-            ))}
-          </ol>
+          <Timeline roles={ROLES} />
         </section>
       </main>
     </>

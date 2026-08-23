@@ -1,11 +1,21 @@
 import { LINKS } from "../site";
 
+/**
+ * The career timeline — single source of truth for the "path here" section
+ * on /about and the career header on /past-work.
+ *
+ * `era` splits the AI-native chapter (told in the case studies) from the
+ * fifteen shipping years before it (archived in /past-work). `internal`
+ * is the cross-link that routes readers to the right write-up.
+ */
 export interface Role {
   when: string;
   title: string;
   org: string;
   url: string;
   desc: string;
+  era: "ai" | "earlier";
+  internal?: { href: string; label: string };
 }
 
 export const ROLES: Role[] = [
@@ -15,6 +25,8 @@ export const ROLES: Role[] = [
     org: "Gusto",
     url: LINKS.gusto,
     desc: "Agent Framework, the platform behind Gus",
+    era: "ai",
+    internal: { href: "/case-studies/gusto", label: "case study →" },
   },
   {
     when: "2024 – 2025",
@@ -22,6 +34,8 @@ export const ROLES: Role[] = [
     org: "Filevine",
     url: LINKS.filevine,
     desc: "built the flagship AI agent from scratch",
+    era: "ai",
+    internal: { href: "/case-studies/filevine", label: "case study →" },
   },
   {
     when: "2023 – now",
@@ -29,6 +43,8 @@ export const ROLES: Role[] = [
     org: "Hassion Studio",
     url: LINKS.hassion,
     desc: "AI studio; built Randal (randal.bot)",
+    era: "ai",
+    internal: { href: "/case-studies/randal", label: "case study →" },
   },
   {
     when: "2022 – now",
@@ -36,6 +52,8 @@ export const ROLES: Role[] = [
     org: "Paintball Vault",
     url: LINKS.pbvault,
     desc: "first marketplace for paintball, $1M+ in sales",
+    era: "earlier",
+    internal: { href: "/past-work/paintball-vault", label: "project →" },
   },
   {
     when: "2021 – 2022",
@@ -43,6 +61,8 @@ export const ROLES: Role[] = [
     org: "PangoBooks",
     url: LINKS.pangobooks,
     desc: "sole developer of web and native apps",
+    era: "earlier",
+    internal: { href: "/past-work/pangobooks", label: "project →" },
   },
   {
     when: "2015 – 2021",
@@ -50,6 +70,7 @@ export const ROLES: Role[] = [
     org: "Reverb",
     url: LINKS.reverb,
     desc: "early employee through the Etsy acquisition — Reverb Sites, Reverb Lessons, design system",
+    era: "earlier",
   },
   {
     when: "2013 – 2015",
@@ -57,5 +78,6 @@ export const ROLES: Role[] = [
     org: "Blitz Lake",
     url: LINKS.blitzlake,
     desc: "brand and marketing across a PE portfolio",
+    era: "earlier",
   },
 ];

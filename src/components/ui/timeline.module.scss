@@ -1,0 +1,91 @@
+.grouped {
+  display: flex;
+  flex-direction: column;
+}
+
+.eraHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  padding: 26px 0 10px;
+  border-bottom: 2px solid var(--ink);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  &:first-child {
+    padding-top: 0;
+  }
+}
+
+.eraLabel {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.eraLink {
+  color: var(--accent);
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.eraNote {
+  color: var(--ink-3);
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.roles {
+  display: flex;
+  flex-direction: column;
+}
+
+.role {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 32px;
+  align-items: baseline;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.when {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--ink-3);
+  min-width: 110px;
+}
+
+.title {
+  font-size: 17px;
+  font-weight: 600;
+  min-width: 220px;
+}
+
+.desc {
+  font-size: 16px;
+  color: var(--ink-2);
+  flex: 1;
+  min-width: 280px;
+}
+
+.goto {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  .desc,
+  .title {
+    min-width: 0;
+    flex-basis: 100%;
+  }
+  .goto {
+    margin-left: auto;
+  }
+}
