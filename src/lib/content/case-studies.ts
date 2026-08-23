@@ -196,9 +196,9 @@ export const CASE_STUDIES: CaseStudy[] = [
         ],
       },
       {
-        heading: "Why it matters to your org",
+        heading: "Why building it myself matters",
         paragraphs: [
-          "Randal is the strongest proof of the playbook: I run my own companies on AI, with my own revenue on the line. When I embed in your org, the patterns I bring were battle-tested here first, in production.",
+          "A harness is a pile of unglamorous systems: how agents remember, how schedules recover when a Mac sleeps, how permissions stay scoped, which model gets which step. I own every one of those decisions in production, with my own revenue on the line. When I embed in an org, those battle-tested patterns come with me.",
           "And you don't need me in the building to use it. Randal is a product: sign up at [randal.bot](https://randal.bot), install the Mac app, and put the same harness to work on your own queue.",
         ],
       },
