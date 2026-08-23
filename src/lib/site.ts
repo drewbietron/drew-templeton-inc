@@ -20,6 +20,14 @@ export const DEFAULT_DESCRIPTION =
 
 export const DEFAULT_OG_IMAGE = `${SITE_URL}/og/default.png`;
 
+/**
+ * GA4 measurement ID. It's a public, client-side identifier (it ships in the
+ * JS bundle regardless), so the fallback lives in code; set the env var in
+ * Vercel to override. Leave empty to disable analytics.
+ */
+export const GA_MEASUREMENT_ID =
+  process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID ?? "G-BZ59MYJDJC";
+
 export const LINKS = {
   randal: "https://randal.bot",
   hassion: "https://hassion.studio",

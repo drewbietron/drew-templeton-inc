@@ -4,6 +4,7 @@ import Head from "next/head";
 import { GoogleAnalytics } from "nextjs-google-analytics";
 
 import { sans, mono } from "../lib/fonts";
+import { GA_MEASUREMENT_ID } from "../lib/site";
 import { logConsoleBanner } from "../lib/watermark";
 import Nav from "../components/nav";
 import Footer from "../components/footer";
@@ -26,9 +27,12 @@ export default function App({ Component, pageProps }: AppProps) {
           }}
         />
       </Head>
-      {process.env.NODE_ENV === "production" &&
-      process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID ? (
-        <GoogleAnalytics trackPageViews strategy="lazyOnload" />
+      {process.env.NODE_ENV === "production" && GA_MEASUREMENT_ID ? (
+        <GoogleAnalytics
+          gaMeasurementId={GA_MEASUREMENT_ID}
+          trackPageViews
+          strategy="lazyOnload"
+        />
       ) : null}
       <a href="#main" className="skip-link">
         Skip to content
