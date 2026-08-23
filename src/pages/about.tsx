@@ -1,49 +1,128 @@
 import Image from "next/image";
-import Page from "../components/page";
-import ABOUT from "../lib/data/pages/about";
+import classNames from "classnames";
 
+import Seo from "../components/seo";
+import { ROLES } from "../lib/content/about";
+import { EMAIL, LINKS } from "../lib/site";
+import { breadcrumbSchema, personSchema, PERSON_ID } from "../lib/structured-data";
+import drew from "../../public/images/drew-templeton.jpg";
 import styles from "./about.module.scss";
 
+const DESCRIPTION =
+  "Operator, not advisor. I've built software and digital products since 2010 — as a founder and embedded inside fast-growing companies. I do the engineering and the product: write the first version, demo it, and stay until shipping AI is just how the org works.";
+
 export default function About() {
-  function renderTeam() {
-    return (
-      <section className={styles.about}>
-        <div className={styles["about-bio"]}>
-          <h2>About Drew</h2>
-          <div className={styles["about-bio-image"]}>
-            <div className={styles["about-bio-image-container"]}>
-              <Image
-                alt="Drew Templeton"
-                fill
-                src="/drew.jpeg"
-                style={{ objectFit: "cover" }}
-              />
-            </div>
-            <div>
+  return (
+    <>
+      <Seo
+        title="About"
+        description={DESCRIPTION}
+        path="/about"
+        type="profile"
+        image="/og/about.png"
+        imageAlt="Drew Templeton — operator, not advisor"
+        jsonLd={[
+          {
+            "@context": "https://schema.org",
+            "@type": "ProfilePage",
+            mainEntity: { "@id": PERSON_ID },
+            url: "https://www.drewtempleton.com/about",
+          },
+          personSchema(),
+          breadcrumbSchema([
+            { name: "Home", path: "/" },
+            { name: "About", path: "/about" },
+          ]),
+        ]}
+      />
+
+      <main id="main" className="container">
+        <header className={styles.hero}>
+          <div className={styles.copy}>
+            <h1 className="h-page">Operator, not advisor.</h1>
+            <div className={styles.bio}>
               <p>
-                I&apos;ve been building software and crafting digital
-                experiences for clients since 2010. I have worked for companies
-                that are just getting started, all the way to some of the
-                biggest tech companies in the Fortune 500.
+                I&apos;ve been building software and digital products since
+                2010 — for companies just getting started and for some of the
+                biggest names in tech. I started building with AI agents before
+                most teams took them seriously, and I&apos;ve shipped them both
+                ways: as a founder, and embedded inside fast-growing companies.
               </p>
               <p>
-                For fun I like to get outside and enjoy time with my wife and
-                three year old daughter. I still get out every once in a while
-                to play paintball, a sport that I completed professionally in
-                for nearly 20 years.
+                What makes me useful is the combination: I do the engineering
+                and the product. I don&apos;t hand an org a strategy and leave
+                — I write the first version, demo it, win the teams over, and
+                stay until shipping AI is just how the org works.
+              </p>
+              <p>
+                Away from the keyboard I&apos;m with my wife and daughter in St.
+                Charles, Illinois — or on a paintball field. I&apos;ve competed
+                professionally at the sport&apos;s highest international level
+                for nearly twenty years, which turns out to be good training
+                for product work: read fast, commit hard, stay calm under fire.
               </p>
             </div>
           </div>
-        </div>
-      </section>
-    );
-  }
-  return (
-    <Page
-      {...ABOUT({
-        type: "custom",
-        data: renderTeam(),
-      })}
-    />
+
+          <aside className={styles.side}>
+            <Image
+              src={drew}
+              alt="Drew Templeton"
+              sizes="(max-width: 760px) 100vw, 560px"
+              className={styles.portrait}
+              priority
+              placeholder="blur"
+            />
+            <dl className={styles.facts}>
+              <div>
+                <dt>Location</dt>
+                <dd>St. Charles, IL</dd>
+              </div>
+              <div>
+                <dt>Email</dt>
+                <dd>
+                  <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
+                </dd>
+              </div>
+              <div>
+                <dt>Education</dt>
+                <dd className={styles.right}>MA, DePaul · BA, Mizzou</dd>
+              </div>
+              <div>
+                <dt>Elsewhere</dt>
+                <dd className={styles.elsewhere}>
+                  <a href={LINKS.randal} rel="me noopener">
+                    randal.bot
+                  </a>
+                  <a href={LINKS.hassion} rel="me noopener">
+                    hassion.studio
+                  </a>
+                </dd>
+              </div>
+            </dl>
+          </aside>
+        </header>
+
+        <section className={styles.timeline} aria-labelledby="path">
+          <h2 id="path" className={classNames("h-section", styles.timelineTitle)}>
+            The path here
+          </h2>
+          <ol className={styles.roles}>
+            {ROLES.map((r) => (
+              <li key={`${r.when}-${r.org}`} className={styles.role}>
+                <div className={styles.when}>{r.when}</div>
+                <div className={styles.title}>{r.title}</div>
+                <div className={styles.desc}>
+                  <a href={r.url} rel="noopener">
+                    {r.org}
+                  </a>{" "}
+                  — {r.desc}
+                </div>
+              </li>
+            ))}
+          </ol>
+        </section>
+      </main>
+    </>
   );
 }

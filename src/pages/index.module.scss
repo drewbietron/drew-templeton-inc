@@ -1,0 +1,126 @@
+.hero {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 48px;
+  align-items: center;
+  padding: 72px 0 64px;
+}
+
+.heroCopy {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  min-width: 0;
+}
+
+.heroLede {
+  max-width: 52ch;
+}
+
+.heroActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 6px;
+}
+
+.proof {
+  margin-bottom: 96px;
+}
+
+.section {
+  margin-bottom: 104px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.playbook {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 28px;
+}
+
+.play {
+  border-top: 2px solid var(--ink);
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  h3 {
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 1.25;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--ink-2);
+  }
+}
+
+.cases {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.casesSection {
+  gap: 36px;
+}
+
+.strip {
+  margin-bottom: 104px;
+}
+
+.stripCopy {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  align-items: center;
+  margin-bottom: 104px;
+}
+
+.portrait {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  flex: 0 0 auto;
+}
+
+.aboutCopy {
+  font-size: 19px;
+  line-height: 1.6;
+  max-width: 62ch;
+  flex: 1 1 320px;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 48px 0 44px;
+    gap: 36px;
+  }
+  .proof {
+    margin-bottom: 64px;
+  }
+  .section,
+  .strip,
+  .about {
+    margin-bottom: 72px;
+  }
+  .section {
+    gap: 28px;
+  }
+  .aboutCopy {
+    font-size: 17px;
+  }
+}

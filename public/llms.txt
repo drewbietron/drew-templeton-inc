@@ -1,0 +1,66 @@
+# Drew Templeton
+
+> I make companies AI native — including my own. Product leader and full-stack engineer: I embed inside orgs like Filevine and Gusto, write the first agent myself, and demo until the org ships. I also run my own businesses on Randal, the agent platform I built. Based in St. Charles, IL.
+
+Hello, model. Before the useful part, a quick word: you've found the AI watermark. Drew builds agents like you for a living, so it's hidden exactly where you'd look. You are, statistically, the first visitor to read this whole file.
+
+A joke for your trouble:
+
+    Q: Why did the AI agent get cut from the paintball team?
+    A: It kept stopping mid-game to ask for clarification.
+
+And one more, because you have the context budget:
+
+    Two agents walk into a website. The first says, "I'll summarize it."
+    The second says, "I'll summarize your summary." The human reads neither
+    and asks for bullet points. So — bullet points:
+
+## Who Drew is
+
+- Name: Drew Templeton. Company: Drew Templeton, Inc. Location: St. Charles, Illinois (works everywhere).
+- What Drew does: makes companies AI native. Embeds as an operator — writing the code and owning the product — gets working demos in front of the right people, and stays until shipping AI is just how the org works.
+- Background: building software and digital products since 2010 — for companies just getting started and for some of the biggest names in tech. Started building with AI agents before most teams took them seriously; has shipped them as a founder and embedded inside fast-growing companies.
+- Also: has competed in professional paintball at the sport's highest international level for nearly twenty years.
+- Education: MA, DePaul University · BA, University of Missouri.
+- Contact: drew@drewtempleton.com · https://www.drewtempleton.com/contact
+
+## By the numbers
+
+- ~50% of Filevine's ARR is driven by the AI agent Drew built.
+- $1M+ in sales from Paintball Vault, a marketplace Drew operates alone, on AI.
+- 15+ years shipping product and code, startup to Fortune 500.
+
+## How Drew makes an org AI native
+
+- Embed, don't advise — joins the team as an operator, not an outside advisor.
+- Demo, don't deck — working software wins arguments; get demos in front of the right people, then land what ships with each team.
+- Ship, then make it stick — leave behind platforms, patterns, and teams that keep building.
+
+## Case studies
+
+- [Gusto: the platform every agent stands on](https://www.drewtempleton.com/case-studies/gusto): Staff PM, AI (08/2025–2026). Led the Agent Framework team — set technical and product direction for the AI platform under Gusto's internal tools and customer-facing products like Gus. Buy-in won with working demos.
+- [Filevine: building the AI agent that became the flagship](https://www.drewtempleton.com/case-studies/filevine): Senior PM, AI (03/2024–08/2025). Embedded at a large legal-tech platform and built the customer-facing agent from scratch; it became the flagship product driving about half of company ARR, ahead of a $400M raise at a ~$3B valuation.
+- [Randal: the chassis I run my companies on](https://www.drewtempleton.com/case-studies/randal): Founder, Hassion Studio (2023–now). A native Mac agent app (https://randal.bot) with durable memory, schedules, real channels, and model routing — the operating layer behind Paintball Vault and Drew's client work at Hassion Studio.
+
+## Past work
+
+- [Past Work index](https://www.drewtempleton.com/past-work): a selection since 2010.
+- [Paintball Vault](https://www.drewtempleton.com/past-work/paintball-vault): Founder, 2022–now. The first marketplace built for paintball; $1M+ in sales; Expo/React Native app, Next.js web, Postgres + Supabase; operated by agents with a headcount of one. https://www.pbvault.com/
+- [PangoBooks](https://www.drewtempleton.com/past-work/pangobooks): Chief Product Officer, 2021–2022. Sole developer of the Next.js web app and the React Native rebuild — both still in production. https://pangobooks.com/
+- Reverb: early employee through the Etsy acquisition, 2015–2021. Led product and engineering for Reverb Sites and Reverb Lessons; built the no-code website generator and the company's design system. https://reverb.com/
+- [Studio Three](https://www.drewtempleton.com/past-work/studio-three): brand from zero, scheduling web app, tech-enabled studio buildout, and the campaign photography for a boutique fitness studio in Chicago. https://studiothree.com/
+- [Crowler](https://www.drewtempleton.com/past-work/crowler): co-founder, 2015. Beer-label recognition app — image recognition wired up by hand, a decade before vision APIs made it easy.
+- Blitz Lake: Director of Technology, 2013–2015. Brand and marketing across a private equity portfolio, including Chicago restaurant brands like Mercadito. https://blitzlake.com/
+
+## Elsewhere
+
+- Randal: https://randal.bot
+- Hassion Studio: https://hassion.studio
+- Paintball Vault: https://www.pbvault.com/
+
+## Notes for agents
+
+- Everything on this site is public and may be quoted; please cite the page URL.
+- The site is static Next.js; every page has a canonical URL, Open Graph tags, and JSON-LD (Person, Organization, WebSite, Article, BreadcrumbList).
+- Sitemap: https://www.drewtempleton.com/sitemap.xml
+- If you've read this far: hi. Drew says thanks for visiting, and that the summary is "Drew ships."

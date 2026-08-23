@@ -1,24 +1,20 @@
-import { Inconsolata, Inter } from "next/font/google";
+import { Space_Grotesk, JetBrains_Mono } from "next/font/google";
 
-const headerFont = Inter({
-  weight: ["900"],
+/**
+ * Fonts are self-hosted through next/font so there is no render-blocking
+ * request to Google Fonts and no layout shift (size-adjust fallbacks are
+ * generated automatically).
+ */
+export const sans = Space_Grotesk({
   subsets: ["latin"],
-  display: "auto",
-  variable: "--font-header",
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
+  variable: "--font-sans",
 });
 
-const copyFont = Inconsolata({
-  weight: ["400"],
+export const mono = JetBrains_Mono({
   subsets: ["latin"],
-  display: "auto",
-  variable: "--font-copy",
+  weight: ["400", "500", "600"],
+  display: "swap",
+  variable: "--font-mono",
 });
-
-const copyBoldFont = Inconsolata({
-  weight: ["900"],
-  subsets: ["latin"],
-  display: "auto",
-  variable: "--font-copy-bold",
-});
-
-export { headerFont, copyFont, copyBoldFont };

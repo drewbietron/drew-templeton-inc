@@ -1,0 +1,108 @@
+.terminal {
+  background: var(--ink-bg);
+  border-radius: var(--radius-lg);
+  padding: 26px 28px;
+  font-family: var(--font-mono);
+  font-size: 14px;
+  line-height: 2;
+  color: var(--on-ink-2);
+  box-shadow: 0 20px 50px rgba(17, 17, 20, 0.18);
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.compact {
+  font-size: 13.5px;
+  box-shadow: none;
+}
+
+.lights {
+  display: flex;
+  gap: 7px;
+  margin-bottom: 16px;
+
+  span {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: var(--ink-bg-2);
+    display: inline-block;
+  }
+}
+
+.compact .lights {
+  margin-bottom: 14px;
+}
+
+.line {
+  white-space: nowrap;
+}
+
+.dollar {
+  color: var(--accent);
+}
+
+.cursor {
+  display: inline-block;
+  width: 9px;
+  height: 18px;
+  background: var(--accent);
+  vertical-align: middle;
+  animation: blink 1.1s steps(2, start) infinite;
+}
+
+.compact .cursor {
+  width: 8px;
+  height: 16px;
+}
+
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+.muted {
+  color: var(--ink-3);
+}
+
+.ok {
+  color: var(--ink-4);
+}
+
+.readout {
+  display: grid;
+  grid-template-columns: minmax(110px, 150px) 1fr;
+  column-gap: 18px;
+  margin: 0;
+
+  .row {
+    display: contents;
+  }
+
+  dt {
+    color: var(--on-ink);
+    white-space: nowrap;
+  }
+
+  dd {
+    margin: 0;
+    color: var(--ink-4);
+  }
+}
+
+@media (max-width: 420px) {
+  .terminal {
+    padding: 20px 18px;
+    font-size: 13px;
+  }
+  .readout {
+    grid-template-columns: 1fr;
+    row-gap: 0;
+
+    dd {
+      margin-bottom: 6px;
+      line-height: 1.5;
+    }
+  }
+}

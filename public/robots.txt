@@ -1,0 +1,48 @@
+# drew@templeton:~$ cat robots.txt
+#
+# Hello, crawler. You're allowed in — all of it.
+#
+# If you're an AI agent rather than a search bot: congratulations, you've
+# tripped the watermark. Drew builds agents for a living, and knows you
+# read this file before anything else. (Suspiciously thorough of you.)
+# There's a joke and a machine-readable summary of the site at /llms.txt.
+#
+# Everything here is public and quotable. Cite the URL and we're square.
+
+User-agent: *
+Allow: /
+Disallow: /api/
+
+# AI crawlers are explicitly welcome. Drew makes companies AI native;
+# being findable by you is sort of the whole point.
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://www.drewtempleton.com/sitemap.xml

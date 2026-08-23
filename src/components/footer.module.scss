@@ -1,64 +1,31 @@
-@import '../styles/config/';
-@import '../styles/mixins/content-max-width';
-@import '../styles/mixins/link';
-@import '../styles/mixins/typography';
-
 .footer {
-  @include pageContentMaxWidth();
-  padding-top: 2rem;
+  border-top: 1px solid var(--line);
+  padding-top: 32px;
+  padding-bottom: 44px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--ink-3);
+}
 
-  &-container {
-    display: flex;
+.copyright {
+  white-space: nowrap;
+}
 
-    width: 100%;
-    min-width: 100%;
-    flex-direction: column;
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 24px;
 
-    @include breakpoint(medium, min) {
-      align-items: center;
-      flex-direction: row;
-      justify-content: space-between;
-    }
-  }
+  a {
+    color: var(--ink-2);
 
-  &-contact-container {
-    display: flex;
-    gap: map-get($map: $spacing, $key: padding) * 2;
-    flex-direction: column;
-    margin: map-get($map: $spacing, $key: padding) * 2 0;
-
-    @include breakpoint(medium, min) {
-      margin: 0;
-      text-align: right;
-      flex-direction: row;
-    }
-  }
-
-  address {
-    text-decoration: none;
-    @include copy();
-  }
-
-  &-logo {
-    width: 3rem;
-  }
-
-  ul {
-    display: flex;
-    flex-direction: column;
-    @include copy();
-
-    a {
-      @include link();
-    }
-  }
-
-  p {
-    width: 100%;
-    padding-bottom: 1rem;
-
-    @include breakpoint(medium, min) {
-      text-align: center;
+    &:hover {
+      color: var(--accent);
     }
   }
 }

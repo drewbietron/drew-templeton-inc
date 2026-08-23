@@ -1,0 +1,148 @@
+.header {
+  padding: 72px 0 56px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  border-bottom: 1px solid var(--line);
+}
+
+.title {
+  max-width: 20ch;
+}
+
+.facts {
+  margin: 8px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 48px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--ink-2);
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  dt {
+    color: var(--ink-3);
+    text-transform: uppercase;
+  }
+
+  dd {
+    margin: 0;
+    color: var(--ink);
+  }
+}
+
+.stats {
+  margin-top: 48px;
+}
+
+.article {
+  padding: 56px 0 40px;
+}
+
+.articleSplit {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 48px;
+}
+
+.prose {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  p + p {
+    margin-top: 0;
+  }
+}
+
+.cta {
+  font-family: var(--font-mono);
+  font-size: 15px;
+}
+
+.aside {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 0;
+}
+
+.accent {
+  color: var(--accent);
+}
+
+.panel {
+  background: var(--ink-bg);
+  border-radius: var(--radius);
+  padding: 24px 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  color: var(--on-ink);
+}
+
+.panelLabel {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--ink-3);
+  text-transform: uppercase;
+}
+
+.panelStat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.panelValue {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.panelCaption {
+  font-size: 14px;
+  color: var(--ink-3);
+}
+
+.next {
+  border-top: 1px solid var(--line);
+  padding: 36px 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  a {
+    font-size: 22px;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    padding: 48px 0 40px;
+  }
+  .stats {
+    margin-top: 32px;
+  }
+  .article {
+    padding: 40px 0 32px;
+  }
+  .prose {
+    gap: 32px;
+  }
+  .next a {
+    font-size: 19px;
+  }
+}
