@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import classNames from "classnames";
+import { LINKS as SITE_LINKS } from "../lib/site";
 import styles from "./nav.module.scss";
 
 const LINKS = [
@@ -36,6 +37,16 @@ export default function Nav() {
               </li>
             );
           })}
+          <li>
+            <a
+              href={SITE_LINKS.randal}
+              className={classNames(styles.link, styles.randal)}
+              rel="noopener"
+              title="Randal — the AI chassis I built. Sign up at randal.bot"
+            >
+              Randal <span aria-hidden="true">↗</span>
+            </a>
+          </li>
           <li>
             <Link href="/contact" className="btn btn--dark">
               Contact

@@ -162,7 +162,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       when: "2023 – now",
       headline: "Built my own AI chassis — and run companies on it",
       summary:
-        "The agent harness behind my businesses and client work, now a product of its own. One person plus agents, running whole companies.",
+        "The agent harness behind my businesses and client work, now a product anyone can sign up for at randal.bot. One person plus agents, running whole companies.",
     },
     title: "Randal: the chassis I run my companies on",
     metaTitle: "Randal case study — the AI chassis I run my companies on",
@@ -197,12 +197,13 @@ export const CASE_STUDIES: CaseStudy[] = [
         heading: "Why it matters to your org",
         paragraphs: [
           "Randal is the strongest possible proof of the playbook: I don't just help companies adopt AI — I run companies on it. When I embed in your org, the patterns I bring were battle-tested here first, in production, with my own revenue on the line.",
+          "And you don't need me in the building to use it. Randal is a product: sign up at [randal.bot](https://randal.bot), install the Mac app, and put the same harness to work on your own queue.",
         ],
       },
     ],
     quote:
       "One person plus agents, running whole companies. That's not a pitch — it's my Tuesday.",
-    cta: { label: "See the product at randal.bot →", href: LINKS.randal },
+    cta: { label: "Get Randal at randal.bot →", href: LINKS.randal },
     next: { slug: "gusto", label: "Gusto: the platform behind Gus →" },
     datePublished: "2026-08-23",
   },

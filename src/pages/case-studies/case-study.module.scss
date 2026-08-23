@@ -10,6 +10,23 @@
   max-width: 20ch;
 }
 
+.headerActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 4px;
+}
+
+.strip {
+  margin-bottom: 56px;
+}
+
+.stripCopy {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .facts {
   margin: 8px 0 0;
   display: flex;

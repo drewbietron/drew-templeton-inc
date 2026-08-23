@@ -83,6 +83,25 @@ export function websiteSchema() {
   };
 }
 
+/** Randal — the product. Linked to the Person so search/AI tie the two together. */
+export function randalSoftwareSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "@id": `${LINKS.randal}/#app`,
+    name: "Randal",
+    url: LINKS.randal,
+    applicationCategory: "BusinessApplication",
+    operatingSystem: "macOS",
+    description:
+      "An AI chassis for running real work with agents: a native Mac app with durable memory, schedules, real channels, and model routing. Built by Drew Templeton to run Drew's own companies; open for sign-ups.",
+    author: { "@id": PERSON_ID },
+    creator: { "@id": PERSON_ID },
+    publisher: { "@id": ORG_ID },
+    offers: { "@type": "Offer", url: LINKS.randal, availability: "https://schema.org/InStock" },
+  };
+}
+
 export function breadcrumbSchema(
   crumbs: { name: string; path: string }[]
 ) {

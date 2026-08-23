@@ -4,14 +4,20 @@ import classNames from "classnames";
 
 import Seo from "../components/seo";
 import CaseCard from "../components/ui/case-card";
-import Terminal, { Cursor, Prompt, Readout } from "../components/ui/terminal";
+import Terminal, {
+  Cursor,
+  Muted,
+  Ok,
+  Prompt,
+  Readout,
+} from "../components/ui/terminal";
 import { CASE_STUDIES } from "../lib/content/case-studies";
 import {
   organizationSchema,
   personSchema,
   websiteSchema,
 } from "../lib/structured-data";
-import { DEFAULT_DESCRIPTION } from "../lib/site";
+import { DEFAULT_DESCRIPTION, LINKS } from "../lib/site";
 import drew from "../../public/images/drew-templeton.jpg";
 import styles from "./index.module.scss";
 
@@ -32,7 +38,7 @@ const PLAYBOOK = [
 
 const PROOF = [
   { value: "~50%", label: "of Filevine's ARR driven by the agent I built" },
-  { value: "$1M+", label: "in sales from a marketplace I run alone, on AI" },
+  { value: "$1M+", label: "in sales from a marketplace I run alone, on Randal" },
   {
     value: "15+ yrs",
     label: "shipping product and code, startup to Fortune 500",
@@ -86,8 +92,11 @@ export default function Home() {
               Product leader and full-stack engineer. Sometimes that means
               embedding inside a company like Filevine or Gusto and winning it
               over demo by demo. Sometimes it means running my own — like
-              Paintball Vault, a $1M+ marketplace I operate entirely alone, on
-              Randal, the agent platform I built.
+              Paintball Vault, a $1M+ marketplace I operate entirely alone, on{" "}
+              <a href={LINKS.randal} rel="noopener">
+                Randal
+              </a>
+              , the agent platform I built.
             </p>
             <div className={styles.heroActions}>
               <Link href="/#cases" className="btn btn--primary">
@@ -121,6 +130,57 @@ export default function Home() {
               <div className="stats__label">{p.label}</div>
             </div>
           ))}
+        </section>
+
+        {/* Randal */}
+        <section
+          id="randal"
+          className={classNames(styles.section, styles.randal)}
+          aria-labelledby="randal-h"
+        >
+          <div className={styles.randalCopy}>
+            <div className={styles.randalEyebrow}>
+              Randal · the AI chassis ·{" "}
+              <a href={LINKS.randal} rel="noopener">
+                randal.bot
+              </a>
+            </div>
+            <h2 id="randal-h" className="h-section">
+              Everything I ship runs on Randal. Your work can too.
+            </h2>
+            <p className={styles.randalLede}>
+              Randal is the agent harness I built to run my own companies — and
+              the platform I build most of my AI-native work on. It&apos;s a
+              native Mac app with durable memory, schedules, real channels, and
+              model routing: agents that use your apps the way you do, learn a
+              workflow by watching you once, and keep working alongside
+              always-on cloud bots. Scoped, permissioned, private by default.
+            </p>
+            <p className={styles.randalLede}>
+              It&apos;s a product, not a side project — open for sign-ups, and
+              the same chassis that runs a $1M+ marketplace with a headcount of
+              one.
+            </p>
+            <div className={styles.heroActions}>
+              <a href={LINKS.randal} className="btn btn--primary" rel="noopener">
+                Get Randal at randal.bot →
+              </a>
+              <Link href="/case-studies/randal" className="btn btn--secondary">
+                Read the case study
+              </Link>
+            </div>
+          </div>
+          <Terminal label="Randal working overnight: posted listings, answered buyers, drafted the weekly update">
+            <Muted>02:41 AM · Mac asleep</Muted>
+            <div>
+              <span className={styles.accent}>randal</span> is still working the
+              queue
+            </div>
+            <Ok>posted 14 new listings</Ok>
+            <Ok>answered 6 buyer messages</Ok>
+            <Ok>drafted the weekly update</Ok>
+            <Cursor />
+          </Terminal>
         </section>
 
         {/* Playbook */}
