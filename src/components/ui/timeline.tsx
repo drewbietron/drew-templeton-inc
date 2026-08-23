@@ -12,7 +12,16 @@ interface TimelineProps {
   groupByEra?: boolean;
 }
 
-function Row({ r, badge = true }: { r: Role; badge?: boolean }) {
+function Row({
+  r,
+  badge = true,
+  note,
+}: {
+  r: Role;
+  badge?: boolean;
+  /** Muted annotation rendered inside the row, under the text columns. */
+  note?: string;
+}) {
   return (
     <li className={styles.role}>
       <div className={styles.when}>{r.when}</div>
@@ -31,6 +40,7 @@ function Row({ r, badge = true }: { r: Role; badge?: boolean }) {
           {r.internal.label}
         </Link>
       ) : null}
+      {note ? <p className={styles.transition}>{note}</p> : null}
     </li>
   );
 }
@@ -62,21 +72,15 @@ export default function Timeline({ roles, groupByEra }: TimelineProps) {
         {ai.map((r) => (
           <Row key={`${r.when}-${r.org}`} r={r} />
         ))}
+        {bridge.map((r) => (
+          <Row
+            key={`${r.when}-${r.org}`}
+            r={r}
+            badge={false}
+            note={r.transition}
+          />
+        ))}
       </ol>
-      {bridge.map((r) => (
-        <div key={`${r.when}-${r.org}`} className={styles.bridge}>
-          <div className={styles.bridgeHead}>
-            The transition · shipping years <span aria-hidden="true">→</span>{" "}
-            AI-native
-          </div>
-          <ol className={styles.roles}>
-            <Row r={r} badge={false} />
-          </ol>
-          {r.transition ? (
-            <p className={styles.transition}>{r.transition}</p>
-          ) : null}
-        </div>
-      ))}
       <div className={styles.eraHeader}>
         <span className={styles.eraLabel}>2010 – 2022 · the shipping years</span>
         <span className={styles.eraNote}>selected projects below ↓</span>

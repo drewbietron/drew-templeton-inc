@@ -77,42 +77,19 @@
   font-size: 11px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: var(--accent);
-  border: 1px solid var(--accent-line);
-  border-radius: 3px;
-  padding: 3px 8px;
+  color: var(--ink-3);
   white-space: nowrap;
 }
 
-.bridge {
-  border: 1px solid var(--accent-line);
-  border-left: 2px solid var(--accent);
-  border-radius: var(--radius);
-  background: var(--surface);
-  padding: 16px 24px 18px;
-  margin: 26px 0 4px;
-
-  .role {
-    border-bottom: 0;
-    padding: 10px 0 6px;
-  }
-}
-
-.bridgeHead {
-  font-family: var(--font-mono);
-  font-size: 12px;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--accent);
-  font-weight: 600;
-}
-
+/* Annotation under a row's text columns; indent = .when width + row gap. */
 .transition {
+  flex-basis: 100%;
   font-size: 15px;
   line-height: 1.6;
-  color: var(--ink-2);
-  max-width: 72ch;
-  margin: 0;
+  color: var(--ink-3);
+  max-width: calc(72ch + 142px);
+  margin: 2px 0 0;
+  padding-left: 142px;
 }
 
 .goto {
@@ -128,50 +105,11 @@
     min-width: 0;
     flex-basis: 100%;
   }
-  .badge {
-  font-family: var(--font-mono);
-  font-size: 11px;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: var(--accent);
-  border: 1px solid var(--accent-line);
-  border-radius: 3px;
-  padding: 3px 8px;
-  white-space: nowrap;
-}
-
-.bridge {
-  border: 1px solid var(--accent-line);
-  border-left: 2px solid var(--accent);
-  border-radius: var(--radius);
-  background: var(--surface);
-  padding: 16px 24px 18px;
-  margin: 26px 0 4px;
-
-  .role {
-    border-bottom: 0;
-    padding: 10px 0 6px;
+  .transition {
+    padding-left: 0;
+    max-width: 72ch;
   }
-}
-
-.bridgeHead {
-  font-family: var(--font-mono);
-  font-size: 12px;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--accent);
-  font-weight: 600;
-}
-
-.transition {
-  font-size: 15px;
-  line-height: 1.6;
-  color: var(--ink-2);
-  max-width: 72ch;
-  margin: 0;
-}
-
-.goto {
+  .goto {
     margin-left: auto;
   }
 }

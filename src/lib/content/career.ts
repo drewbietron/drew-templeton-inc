@@ -17,7 +17,7 @@ export interface Role {
   url: string;
   desc: string;
   era: "ai" | "earlier" | "bridge";
-  /** Extra sentence shown in the era-grouped timeline's bridge block. */
+  /** Extra sentence shown under this row in the era-grouped timeline. */
   transition?: string;
   internal?: { href: string; label: string };
 }
