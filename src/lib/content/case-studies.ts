@@ -141,8 +141,8 @@ export const CASE_STUDIES: CaseStudy[] = [
         heading: "What I did",
         paragraphs: [
           "I embedded as the AI lead and built the customer-facing agent myself: writing the code, setting the technical direction, and owning the product end to end. Instead of pitching a roadmap, I got a working agent in front of people and let the demo make the argument.",
-          "Most of the real work sat below the waterline. Legal case files arrive as scanned paper, so I went deep on Filevine's ETL pipeline and OCR quality until case data was something an agent could actually reason over, and I built an eval framework so we measured whether answers got better instead of guessing.",
-          "The flagship use case was AI Medical Chronology: pulling the data points that matter from medical records that run past 500,000 pages, at scale. Then I took it to the users, teaching law firms how to work the tool, because legal teams don't adopt AI on faith. Alongside it, I prototyped other AI features across the product and landed each with its owning team.",
+          "Most of the real work sat below the waterline. The flagship use case, AI Medical Chronology, does work firms staff whole teams of paralegals for — reading medical records that run past 500,000 pages and pulling out the data points a case turns on. Getting AI to do that credibly meant improving every stage of the pipeline: better OCR on the scanned records, better extraction of the data points, and a data layer that houses the results so the chat agent can query them.",
+          "The eval framework made it sellable: we proved the system's efficacy against the work paralegals were already doing instead of asking firms to take it on faith. Then I taught the firms how to fold it into their practice. Alongside it, I prototyped other AI features across the product and landed each with its owning team.",
         ],
       },
       {
@@ -196,9 +196,9 @@ export const CASE_STUDIES: CaseStudy[] = [
         ],
       },
       {
-        heading: "Why it matters to your org",
+        heading: "Why building it myself matters",
         paragraphs: [
-          "Randal is the strongest proof of the playbook: I run my own companies on AI, with my own revenue on the line. When I embed in your org, the patterns I bring were battle-tested here first, in production.",
+          "A harness is a pile of unglamorous systems: how agents remember, how schedules recover when a Mac sleeps, how permissions stay scoped, which model gets which step. I own every one of those decisions in production, with my own revenue on the line. When I embed in an org, those battle-tested patterns come with me.",
           "And you don't need me in the building to use it. Randal is a product: sign up at [randal.bot](https://randal.bot), install the Mac app, and put the same harness to work on your own queue.",
         ],
       },

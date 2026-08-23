@@ -146,7 +146,7 @@ export default function Home() {
               </a>
             </div>
             <h2 id="randal-h" className="h-section">
-              Everything I ship runs on Randal. Your work can too.
+              I built my own agent harness. Everything I ship runs on it.
             </h2>
             <p className={styles.randalLede}>
               Randal is the agent harness I built to run my own companies, and
