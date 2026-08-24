@@ -66,7 +66,7 @@ export const ROLES: Role[] = [
     title: "Chief Product Officer",
     org: "PangoBooks",
     url: LINKS.pangobooks,
-    desc: "sole developer of web and native apps, peer to peer marketpalce for selling books",
+    desc: "sole developer of web and native apps, peer to peer marketplace for selling books",
     era: "earlier",
     internal: { href: "/past-work/pangobooks", label: "project →" },
   },

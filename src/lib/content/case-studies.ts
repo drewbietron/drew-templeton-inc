@@ -75,7 +75,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       {
         heading: "The situation",
         paragraphs: [
-          "Gusto runs payroll, benefits, and HR for hundreds of thousands of small businesses.  A domain where AI has to be right, not just impressive. The company wanted agents in its internal tools and in customer-facing products like Gus, but every team building its own meant duplicated effort and inconsistent quality. What it needed was one platform underneath all of them.",
+          "Gusto runs payroll, benefits, and HR for hundreds of thousands of small businesses. A domain where AI has to be right, not just impressive. The company wanted agents in its internal tools and in customer-facing products like Gus, but every team building its own meant duplicated effort and inconsistent quality. What it needed was one platform underneath all of them.",
         ],
       },
       {
@@ -84,7 +84,7 @@ export const CASE_STUDIES: CaseStudy[] = [
           "Embedded as lead of the Agent Framework team, I set both the technical and the product direction for the AI platform behind Gusto's internal tools and customer-facing products. Same playbook as Filevine, bigger org: demos first, then land what ships with each team.",
           "The other half of the job was making every team fast. I drove the AI primitives Gusto's agents are built from, worked out how to detect which use cases were actually worth an agent, and wrote the internal AI Wiki so teams could go from idea to shipped agent without me in the loop.",
           "Platform work is deliberately unglamorous, and that's the point: the primitives are where an org becomes AI native or doesn't.",
-          "Enabling teams to become AI native meant embedding myself into every team and building the primitives they needed to get there.  Tools, evals, processes, analysis, retrieval, every team needed something different, and I helped enable it for them.",
+          "Enabling teams to become AI native meant embedding myself into every team and building the primitives they needed to get there. Tools, evals, processes, analysis, retrieval, every team needed something different, and I helped enable it for them.",
         ],
       },
       {
@@ -202,7 +202,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       {
         heading: "Why building it myself matters",
         paragraphs: [
-          "A harness is a pile of unglamorous systems: how agents remember, how schedules run reliably, how permissions stay scoped, which model gets which step, observaility, cost analysis, its a smorgasbord of features that were disparate across the systems that existed. I own every one of those decisions in production, with my own revenue on the line. When I embed in an org, those battle-tested patterns come with me.",
+          "A harness is a pile of unglamorous systems: how agents remember, how schedules run reliably, how permissions stay scoped, which model gets which step, observability, cost analysis — it's a smorgasbord of features that were disparate across the systems that existed. I own every one of those decisions in production, with my own revenue on the line. When I embed in an org, those battle-tested patterns come with me.",
           "And you don't need me in the building to use it. Randal is a product: sign up at [randal.bot](https://randal.bot), install the Mac app, and put the same harness to work on your own queue.",
         ],
       },
