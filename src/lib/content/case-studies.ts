@@ -44,14 +44,14 @@ export const CASE_STUDIES: CaseStudy[] = [
     name: "Gusto",
     card: {
       when: "2025 – now",
-      headline: "Led the Agent Framework behind Gus",
+      headline: "Led the Agent Framework behind Gusto and Gus",
       summary:
-        "Set technical and product direction for the AI platform under Gusto's internal tools and customer-facing products — and won a large org over with working demos.",
+        "Set technical and product direction for the AI platform under Gusto's internal tools and customer-facing products and won a large org over with working demos.",
     },
     title: "Gusto: the platform every agent stands on",
     metaTitle: "Gusto case study — leading the Agent Framework behind Gus",
     description:
-      "How I set technical and product direction for Gusto's Agent Framework — the AI platform under Gus and Gusto's internal tools — and won a large org over with working demos. A case study by Drew Templeton.",
+      "How I set technical and product direction for Gusto's Agent Framework, the AI platform under Gus and Gusto's internal tools and won a large org over with working demos. A case study by Drew Templeton.",
     facts: [
       { label: "Role", value: "AI Platform Lead" },
       { label: "When", value: "08/2025 – now" },
@@ -67,7 +67,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       { value: "1 platform", label: "under every Gusto agent" },
       {
         value: "Internal + external",
-        label: "back-office tools and customer-facing Gus",
+        label: "internal tools and customer-facing Gus",
       },
       { value: "AI Wiki", label: "the internal playbook teams build from" },
     ],
@@ -75,7 +75,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       {
         heading: "The situation",
         paragraphs: [
-          "Gusto runs payroll, benefits, and HR for hundreds of thousands of small businesses — a domain where AI has to be right, not just impressive. The company wanted agents in its internal tools and in customer-facing products like Gus, but every team building its own meant duplicated effort and inconsistent quality. What it needed was one platform underneath all of them.",
+          "Gusto runs payroll, benefits, and HR for hundreds of thousands of small businesses. A domain where AI has to be right, not just impressive. The company wanted agents in its internal tools and in customer-facing products like Gus, but every team building its own meant duplicated effort and inconsistent quality. What it needed was one platform underneath all of them.",
         ],
       },
       {
@@ -84,6 +84,7 @@ export const CASE_STUDIES: CaseStudy[] = [
           "Embedded as lead of the Agent Framework team, I set both the technical and the product direction for the AI platform behind Gusto's internal tools and customer-facing products. Same playbook as Filevine, bigger org: demos first, then land what ships with each team.",
           "The other half of the job was making every team fast. I drove the AI primitives Gusto's agents are built from, worked out how to detect which use cases were actually worth an agent, and wrote the internal AI Wiki so teams could go from idea to shipped agent without me in the loop.",
           "Platform work is deliberately unglamorous, and that's the point: the primitives are where an org becomes AI native or doesn't.",
+          "Enabling teams to become AI native meant embedding myself into every team and building the primitives they needed to get there. Tools, evals, processes, analysis, retrieval, every team needed something different, and I helped enable it for them.",
         ],
       },
       {
@@ -141,7 +142,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         heading: "What I did",
         paragraphs: [
           "I embedded as the AI lead and built the customer-facing agent myself: writing the code, setting the technical direction, and owning the product end to end. Instead of pitching a roadmap, I got a working agent in front of people and let the demo make the argument.",
-          "Most of the real work sat below the waterline. The flagship use case, AI Medical Chronology, does work firms staff whole teams of paralegals for — reading medical records that run past 500,000 pages and pulling out the data points a case turns on. Getting AI to do that credibly meant improving every stage of the pipeline: better OCR on the scanned records, better extraction of the data points, and a data layer that houses the results so the chat agent can query them.",
+          "Most of the real work sat below the waterline. The flagship use case, AI Medical Chronology, does work firms staff whole teams of paralegals for, reading medical records that run past 500,000 pages and pulling out the data points a case turns on. Getting AI to do that credibly meant improving every stage of the pipeline: better OCR on the scanned records, better extraction of the data points, and a data layer that houses the results so the chat agent can query them.",
           "The eval framework made it sellable: we proved the system's efficacy against the work paralegals were already doing instead of asking firms to take it on faith. Then I taught the firms how to fold it into their practice. Alongside it, I prototyped other AI features across the product and landed each with its owning team.",
         ],
       },
@@ -164,16 +165,19 @@ export const CASE_STUDIES: CaseStudy[] = [
       when: "2023 – now",
       headline: "Built my own AI chassis — and run companies on it",
       summary:
-        "The agent harness behind my businesses and client work, now a product anyone can sign up for at randal.bot. One person plus agents, running whole companies.",
+        "The agent harness behind my businesses and client work, now a product anyone can sign up for at randal.bot. One person plus as many agents as they want, running whole companies.",
     },
     title: "Randal: the chassis I run my companies on",
     metaTitle: "Randal case study — the AI chassis I run my companies on",
     description:
-      "Randal is the native Mac agent platform I built to run my own businesses: durable memory, schedules, real channels, model routing. It's the engine behind Paintball Vault, a $1M+ marketplace operated by one person.",
+      "Randal is the agent platform I built to run my own businesses: durable memory, schedules, contact channels, auto model routing, evals and a hands off self learning layer. It's the engine behind Paintball Vault, a $1M+ marketplace operated by one person.",
     facts: [
       { label: "Role", value: "Founder" },
       { label: "When", value: "2023 – now" },
-      { label: "What", value: "Native Mac agent app · randal.bot" },
+      {
+        label: "What",
+        value: "Mac, Windows and mobile Agent app · randal.bot",
+      },
       { label: "Proof", value: "Runs my businesses daily" },
     ],
     stats: [
@@ -185,20 +189,20 @@ export const CASE_STUDIES: CaseStudy[] = [
       {
         heading: "Why it exists",
         paragraphs: [
-          "Running whole businesses as one person only works if agents do real jobs — reliably, on schedule, with memory. Nothing off the shelf did that, so I built the harness myself. Randal started as internal tooling and became a product: a native Mac app with durable memory, schedules, real channels, and model routing.",
+          "Running whole businesses as one person only works if agents do real jobs reliably, on schedule, with memory, with the right tools, transparently. Nothing off the shelf did that, so I built the harness myself. Randal started as internal tooling and became a product: a native Mac, Windows and iOS/Google Play app with durable memory, schedules, real channels, and model routing.",
         ],
       },
       {
         heading: "What I built",
         paragraphs: [
-          "The whole thing: product, engineering, design, and the business around it. Randal turns a Mac into an agent runner: it can use your apps the way you do, learn a workflow by watching you once, run alongside always-on cloud bots, and route each step to the model that does it best. Everything scoped, permissioned, and private by default.",
+          "The whole thing: product, engineering, design, and the business around it. Randal turns your computer, or a cloud instance, into an agent runner: it can use your apps the way you do, learn a workflow by watching you once, run alongside always-on cloud bots, and route each step to the model that does it best. Everything scoped, permissioned, and private by default.",
           "It's also the engine behind [Paintball Vault](https://www.pbvault.com/), a one-person marketplace past $1M in sales and growing — the operating layer my companies run on every day.",
         ],
       },
       {
         heading: "Why building it myself matters",
         paragraphs: [
-          "A harness is a pile of unglamorous systems: how agents remember, how schedules recover when a Mac sleeps, how permissions stay scoped, which model gets which step. I own every one of those decisions in production, with my own revenue on the line. When I embed in an org, those battle-tested patterns come with me.",
+          "A harness is a pile of unglamorous systems: how agents remember, how schedules run reliably, how permissions stay scoped, which model gets which step, observability, cost analysis — it's a smorgasbord of features that were disparate across the systems that existed. I own every one of those decisions in production, with my own revenue on the line. When I embed in an org, those battle-tested patterns come with me.",
           "And you don't need me in the building to use it. Randal is a product: sign up at [randal.bot](https://randal.bot), install the Mac app, and put the same harness to work on your own queue.",
         ],
       },
