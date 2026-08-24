@@ -1,0 +1,40 @@
+.toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  /* Icon-sized hit area without growing the footer row. */
+  margin: -6px 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  border-radius: var(--radius-sm);
+  color: var(--ink-3);
+  cursor: pointer;
+  transition: color 0.15s ease;
+
+  &:hover {
+    color: var(--accent);
+  }
+
+  svg {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+/* The moon shows in light mode (what you'd switch to), the sun in dark. */
+.sun {
+  display: none;
+}
+
+:global(:root[data-theme="dark"]) {
+  .sun {
+    display: block;
+  }
+
+  .moon {
+    display: none;
+  }
+}

@@ -16,6 +16,11 @@
   --on-ink: #f2f2ef;
   --on-ink-2: #c9c9d2;
 
+  /* extremes: hover state of .btn--dark, text on accent fills */
+  --ink-strong: #000000;
+  --on-ink-strong: #ffffff;
+  --on-accent: #ffffff;
+
   /* lines */
   --line: #e4e4df;
   --line-2: #c9c9c2;
@@ -37,6 +42,47 @@
   /* type: --font-sans / --font-mono are injected by next/font in _app.tsx */
 
   color-scheme: light;
+}
+
+/* Dark theme. --ink-3/--ink-4 also color text on the dark strips and the
+   terminal, so they stay mid-range grays legible on both surfaces. */
+@mixin dark-tokens {
+  --bg: #131316;
+  --surface: #1b1b1f;
+  --ink-bg: #0c0c0f;
+  --ink-bg-2: #46464e;
+
+  --ink: #ececee;
+  --ink-2: #b0b0b9;
+  --ink-3: #85858e;
+  --ink-4: #9a9aa5;
+
+  --ink-strong: #ffffff;
+  --on-ink-strong: #000000;
+  --on-accent: #10151d;
+
+  --line: #28282d;
+  --line-2: #45454d;
+  --line-3: #35353b;
+  --accent-line: #2c4260;
+
+  --accent: #6ea3e8;
+  --accent-hover: #8fbaf0;
+  --accent-shadow: rgba(110, 163, 232, 0.12);
+
+  color-scheme: dark;
+}
+
+/* Explicit choice (set pre-paint by the script in _document.tsx)… */
+:root[data-theme="dark"] {
+  @include dark-tokens;
+}
+
+/* …and the device preference when no choice has been made (or no JS). */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    @include dark-tokens;
+  }
 }
 
 @media (max-width: 600px) {
@@ -135,7 +181,7 @@ textarea {
 
 ::selection {
   background: var(--accent);
-  color: #fff;
+  color: var(--on-accent);
 }
 
 /* Anchor targets (e.g. /#cases) shouldn't land flush with the top edge. */
@@ -260,12 +306,12 @@ textarea {
 
 .btn--primary {
   background: var(--accent);
-  color: #fff;
+  color: var(--on-accent);
 }
 
 .btn--primary:hover {
   background: var(--accent-hover);
-  color: #fff;
+  color: var(--on-accent);
 }
 
 .btn--secondary {
@@ -288,8 +334,8 @@ textarea {
 }
 
 .btn--dark:hover {
-  background: #000;
-  color: #fff;
+  background: var(--ink-strong);
+  color: var(--on-ink-strong);
 }
 
 /* Outlined mono button used on the dark strips ("ls ./past-work →") */

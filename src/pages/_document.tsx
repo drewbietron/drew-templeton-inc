@@ -28,6 +28,13 @@ export default class Document extends NextDocument {
           <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
           <link rel="manifest" href="/site.webmanifest" />
           <meta name="theme-color" content="#fafaf8" />
+          {/* Resolve the theme before first paint: stored choice, else the
+              device preference. Kept inline so there's no flash. */}
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `(function(){try{var t=localStorage.getItem("theme");if(t!=="light"&&t!=="dark")t=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.dataset.theme=t;var m=document.querySelector('meta[name="theme-color"]');if(m)m.setAttribute("content",t==="dark"?"#131316":"#fafaf8")}catch(e){}})()`,
+            }}
+          />
           <meta name="author" content="Drew Templeton" />
           <meta name="format-detection" content="telephone=no" />
           <link
