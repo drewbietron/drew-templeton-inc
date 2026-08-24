@@ -55,7 +55,7 @@ export const ROLES: Role[] = [
     title: "Founder",
     org: "Paintball Vault",
     url: LINKS.pbvault,
-    desc: "purpose-built (and now biggest) marketplace for paintball, $1M+ in sales — now runs autonomously on Randal",
+    desc: "purpose-built (and now biggest) marketplace for paintball, $1M+ in sales, now runs autonomously on Randal",
     era: "bridge",
     transition:
       "founded as a niche marketplace, taking my experience as a marketplace operator and professional paintball player. When the agents arrived it went fully AI-native: today the whole operation runs autonomously on Randal, $1M+ and growing, headcount still one.",

@@ -32,7 +32,7 @@ export default function Seo({
   description = DEFAULT_DESCRIPTION,
   path,
   image = DEFAULT_OG_IMAGE,
-  imageAlt = `${SITE_NAME} — I make companies AI native`,
+  imageAlt = `${SITE_NAME}: I make companies AI native`,
   type = "website",
   noindex,
   jsonLd,

@@ -58,7 +58,7 @@ export default function Home() {
       when: "2022 – now",
       headline: "Founded a $1M+ marketplace I run alone",
       summary:
-        "The first marketplace built for the sport I played professionally for nearly twenty years — designed, shipped, and operated by one person on agents I built myself.",
+        "The first marketplace built for the sport I played professionally for nearly twenty years. Designed, shipped, and operated by one person on agents I built myself.",
     },
     {
       href: "/past-work/pangobooks",
@@ -66,7 +66,7 @@ export default function Home() {
       when: "2021 – 2022",
       headline: "One developer, a whole product line",
       summary:
-        "Sole developer of the web app and the native-app rebuild as CPO — both still in production today.",
+        "Sole developer of the web app and the native-app rebuild as CPO, both still in production today.",
     },
   ];
 
@@ -74,7 +74,7 @@ export default function Home() {
     <>
       <Seo
         bare
-        title="Drew Templeton — I make companies AI native"
+        title="Drew Templeton: I make companies AI native"
         description={DEFAULT_DESCRIPTION}
         path="/"
         type="website"
@@ -244,7 +244,7 @@ export default function Home() {
           <p className={styles.aboutCopy}>
             I&apos;m Drew. I live in St. Charles, Illinois with my wife and
             daughter, and when I&apos;m not building agents I&apos;m on a
-            paintball field — a sport I&apos;ve competed in professionally for
+            paintball field, a sport I&apos;ve competed in professionally for
             nearly twenty years.{" "}
             <Link href="/about">More about me →</Link>
           </p>

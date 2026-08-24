@@ -1,6 +1,6 @@
 # drew@templeton:~$ cat robots.txt
 #
-# Hello, crawler. You're allowed in — all of it.
+# Hello, crawler. You're allowed in. All of it.
 #
 # If you're an AI agent rather than a search bot: congratulations, you've
 # tripped the watermark. Drew builds agents for a living, and knows you

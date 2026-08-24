@@ -58,7 +58,7 @@ export const WORK_ROWS: WorkRow[] = [
     name: "Paintball Vault",
     meta: "FOUNDER · 2022–NOW",
     blurb:
-      "The first and leading marketplace for paintball — built after nearly twenty years playing the sport professionally, and run solo past $1M in sales on AI tooling I built myself.",
+      "The first and leading marketplace for paintball, built after nearly twenty years playing the sport professionally, and run solo past $1M in sales on AI tooling I built myself.",
     tags: ["Founded", "App", "Web"],
     image: { src: pv50644, alt: "Paintball Vault app on a phone" },
     page: "paintball-vault",
@@ -69,7 +69,7 @@ export const WORK_ROWS: WorkRow[] = [
     name: "PangoBooks",
     meta: "CPO · 2021–2022",
     blurb:
-      "Sole developer of the web app and the native-app rebuild as CPO — both still in production today.",
+      "Sole developer of the web app and the native-app rebuild as CPO, both still in production today.",
     tags: ["App", "Web"],
     image: { src: pb50637, alt: "PangoBooks app on a phone" },
     page: "pangobooks",
@@ -89,7 +89,7 @@ export const WORK_ROWS: WorkRow[] = [
     name: "Studio Three",
     meta: "BRAND + PHOTOGRAPHY · CHICAGO",
     blurb:
-      "Built the brand from scratch for an early Peloton backer's boutique fitness studio in Chicago — then the web app behind their studio scheduling, the tech buildout of the studios themselves, and the campaign photography.",
+      "Built the brand from scratch for an early Peloton backer's boutique fitness studio in Chicago, then the web app behind their studio scheduling, the tech buildout of the studios themselves, and the campaign photography.",
     tags: ["Brand", "Web App", "Buildout", "Photography"],
     image: { src: s3_0934, alt: "Studio Three instructors, photographed by Drew Templeton" },
     page: "studio-three",
@@ -100,7 +100,7 @@ export const WORK_ROWS: WorkRow[] = [
     name: "Crowler",
     meta: "CO-FOUNDER · 2015",
     blurb:
-      "Beer label recognition, built in 2015 — back when making a phone recognize a can was hard mode. Any vision model does it today; we did it by hand a decade ago.",
+      "Beer label recognition, built in 2015, back when making a phone recognize a can was hard mode. Any vision model does it today; we did it by hand a decade ago.",
     tags: ["Founded", "App"],
     image: { src: cr50666, alt: "Crowler app scanning a beer can" },
     page: "crowler",
@@ -109,7 +109,7 @@ export const WORK_ROWS: WorkRow[] = [
     name: "Blitz Lake",
     meta: "DIRECTOR OF TECH · 2013–2015",
     blurb:
-      "Ran brand and marketing across a private equity firm's portfolio, working directly with founders and investors — including Chicago restaurant brands like Mercadito.",
+      "Ran brand and marketing across a private equity firm's portfolio, working directly with founders and investors, including Chicago restaurant brands like Mercadito.",
     tags: ["Brand", "Web"],
     url: LINKS.blitzlake,
     urlLabel: "blitzlake.com",
@@ -145,21 +145,21 @@ export const PROJECTS: Project[] = [
   {
     slug: "paintball-vault",
     name: "Paintball Vault",
-    metaTitle: "Paintball Vault — the first marketplace built for paintball",
+    metaTitle: "Paintball Vault: the first marketplace built for paintball",
     description:
-      "Paintball Vault is the first marketplace built for paintball — founded, designed, built, and operated by me alone, past $1M in sales on agents I built myself.",
+      "Paintball Vault is the first marketplace built for paintball. Founded, designed, built, and operated by me alone, past $1M in sales on agents I built myself.",
     intro:
-      "The first marketplace built for paintball — founded, designed, built, and operated by one person. [pbvault.com ↗](https://www.pbvault.com/)",
+      "The first marketplace built for paintball. Founded, designed, built, and operated by one person. [pbvault.com ↗](https://www.pbvault.com/)",
     chips: ["Founder · sole operator", "2022 – now", "$1M+ and growing", "Headcount: just me"],
     lead: [
-      { src: pv50644, alt: "Paintball Vault app — browse listings" },
-      { src: pv50649, alt: "Paintball Vault app — listing detail" },
+      { src: pv50644, alt: "Paintball Vault app: browse listings" },
+      { src: pv50649, alt: "Paintball Vault app: listing detail" },
     ],
     sections: [
       {
         heading: "A marketplace the sport never had",
         paragraphs: [
-          "I played paintball professionally for nearly twenty years, so I knew the gap firsthand: enthusiasts had no dedicated platform to buy, sell, and trade gear. Paintball Vault is that platform — the first marketplace built for the sport, now its leading one.",
+          "I played paintball professionally for nearly twenty years, so I knew the gap firsthand: enthusiasts had no dedicated platform to buy, sell, and trade gear. Paintball Vault is that platform: the first marketplace built for the sport, now its leading one.",
         ],
       },
       {
@@ -171,14 +171,14 @@ export const PROJECTS: Project[] = [
       {
         heading: "Operated by agents",
         paragraphs: [
-          "From the early days a custom LLM handled customer support — long before that was normal. Today the whole operation runs on [Randal](/case-studies/randal), the agent chassis I built: listings, support, and the daily grind handled by agents while the headcount stays at exactly one. Past $1M in sales and growing.",
+          "From the early days a custom LLM handled customer support, long before that was normal. Today the whole operation runs on [Randal](/case-studies/randal), the agent chassis I built: listings, support, and the daily grind handled by agents while the headcount stays at exactly one. Past $1M in sales and growing.",
         ],
       },
     ],
     gallery: [
-      { src: pv50646, alt: "Paintball Vault app — search" },
-      { src: pv50656, alt: "Paintball Vault app — seller profile" },
-      { src: pv50653, alt: "Paintball Vault app — checkout" },
+      { src: pv50646, alt: "Paintball Vault app: search" },
+      { src: pv50656, alt: "Paintball Vault app: seller profile" },
+      { src: pv50653, alt: "Paintball Vault app: checkout" },
     ],
     ogImage: pv50644,
     next: { slug: "pangobooks", label: "PangoBooks →" },
@@ -187,9 +187,9 @@ export const PROJECTS: Project[] = [
   {
     slug: "pangobooks",
     name: "PangoBooks",
-    metaTitle: "PangoBooks — web app and native rebuild as CPO and sole developer",
+    metaTitle: "PangoBooks: web app and native rebuild as CPO and sole developer",
     description:
-      "As CPO and sole developer at PangoBooks, I built the Next.js web app from scratch and re-architected the React Native app around one component system — both still in production.",
+      "As CPO and sole developer at PangoBooks, I built the Next.js web app from scratch and re-architected the React Native app around one component system, both still in production.",
     intro:
       "Empowering buying and selling of used books. [pangobooks.com ↗](https://pangobooks.com/)",
     chips: ["Chief Product Officer", "2021 – 2022", "Web + native apps, solo"],
@@ -208,9 +208,9 @@ export const PROJECTS: Project[] = [
       },
     ],
     gallery: [
-      { src: pb50637, alt: "PangoBooks app — home feed" },
-      { src: pb50640, alt: "PangoBooks app — book detail" },
-      { src: pb50658, alt: "PangoBooks app — seller shop" },
+      { src: pb50637, alt: "PangoBooks app: home feed" },
+      { src: pb50640, alt: "PangoBooks app: book detail" },
+      { src: pb50658, alt: "PangoBooks app: seller shop" },
     ],
     ogImage: pb50637,
     next: { slug: "studio-three", label: "Studio Three →" },
@@ -219,9 +219,9 @@ export const PROJECTS: Project[] = [
   {
     slug: "studio-three",
     name: "Studio Three",
-    metaTitle: "Studio Three — brand, scheduling web app, buildout, and photography",
+    metaTitle: "Studio Three: brand, scheduling web app, buildout, and photography",
     description:
-      "Brand from zero, the scheduling web app, a tech-enabled studio buildout, and the launch photography for Studio Three, a boutique fitness studio in Chicago — all by me, Drew Templeton.",
+      "Brand from zero, the scheduling web app, a tech-enabled studio buildout, and the launch photography for Studio Three, a boutique fitness studio in Chicago. All by me, Drew Templeton.",
     intro:
       "Brand, technology, and photography for a boutique fitness studio in Chicago, backed by an early Peloton investor. [studiothree.com ↗](https://studiothree.com/)",
     chips: ["Brand from zero", "Scheduling web app", "Tech-enabled buildout", "All photos by me"],
@@ -235,23 +235,23 @@ export const PROJECTS: Project[] = [
       {
         heading: "And then I shot the campaign",
         paragraphs: [
-          "The launch photography is mine too — instructors, spaces, and the energy of the place. Brand, code, buildout, camera: same person.",
+          "The launch photography is mine too: instructors, spaces, and the energy of the place. Brand, code, buildout, camera: same person.",
         ],
       },
     ],
     masonry: [
-      { src: s3_0934, alt: "Studio Three — Instructors" },
-      { src: s3_1465, alt: "Studio Three — Instructors" },
-      { src: s3_1766, alt: "Studio Three — Andrea Wright" },
-      { src: s3_1801, alt: "Studio Three — Andrea Wright" },
-      { src: s3_1903, alt: "Studio Three — Instructor" },
-      { src: s3_2225, alt: "Studio Three — Marissa Schrader" },
-      { src: s3_2343, alt: "Studio Three — Instructors" },
-      { src: s3_2469, alt: "Studio Three — Instructors" },
-      { src: s3_2824, alt: "Studio Three — Diggy Moreland" },
-      { src: s3_2915, alt: "Studio Three — Instructors" },
-      { src: s3_3218, alt: "Studio Three — Jen Enright" },
-      { src: s3_3884, alt: "Studio Three — Dani Haboush" },
+      { src: s3_0934, alt: "Studio Three: Instructors" },
+      { src: s3_1465, alt: "Studio Three: Instructors" },
+      { src: s3_1766, alt: "Studio Three: Andrea Wright" },
+      { src: s3_1801, alt: "Studio Three: Andrea Wright" },
+      { src: s3_1903, alt: "Studio Three: Instructor" },
+      { src: s3_2225, alt: "Studio Three: Marissa Schrader" },
+      { src: s3_2343, alt: "Studio Three: Instructors" },
+      { src: s3_2469, alt: "Studio Three: Instructors" },
+      { src: s3_2824, alt: "Studio Three: Diggy Moreland" },
+      { src: s3_2915, alt: "Studio Three: Instructors" },
+      { src: s3_3218, alt: "Studio Three: Jen Enright" },
+      { src: s3_3884, alt: "Studio Three: Dani Haboush" },
     ],
     ogImage: s3_2469,
     next: { slug: "crowler", label: "Crowler →" },
@@ -260,16 +260,16 @@ export const PROJECTS: Project[] = [
   {
     slug: "crowler",
     name: "Crowler",
-    metaTitle: "Crowler — beer label recognition, built in 2015",
+    metaTitle: "Crowler: beer label recognition, built in 2015",
     description:
-      "Crowler was a beer-label recognition app I co-founded in 2015: point your camera at a can, get the beer and its ratings — image recognition wired up by hand before vision APIs existed.",
-    intro: "Point your camera at a beer label — know the beer.",
+      "Crowler was a beer-label recognition app I co-founded in 2015: point your camera at a can, get the beer and its ratings. Image recognition wired up by hand before vision APIs existed.",
+    intro: "Point your camera at a beer label, know the beer.",
     chips: ["Co-founder", "2015 · the before times", "Image recognition"],
     sections: [
       {
         heading: "Beer discovery, solved in-store",
         paragraphs: [
-          "Finding the right craft beer in a wall of cans is a guessing game. Crowler — an app I founded alongside my good friend Matt — ended it: point your device at a label in-store and the app identifies it through image recognition, then pulls in ratings from leading beer platforms so you buy informed.",
+          "Finding the right craft beer in a wall of cans is a guessing game. Crowler, an app I founded alongside my good friend Matt, ended it: point your device at a label in-store and the app identifies it through image recognition, then pulls in ratings from leading beer platforms so you buy informed.",
         ],
       },
       {
@@ -280,9 +280,9 @@ export const PROJECTS: Project[] = [
       },
     ],
     gallery: [
-      { src: cr50660, alt: "Crowler app — home" },
-      { src: cr50666, alt: "Crowler — scanning a can" },
-      { src: cr50662, alt: "Crowler — results" },
+      { src: cr50660, alt: "Crowler app: home" },
+      { src: cr50666, alt: "Crowler: scanning a can" },
+      { src: cr50662, alt: "Crowler: results" },
     ],
     ogImage: cr50666,
     next: { slug: "paintball-vault", label: "Paintball Vault →" },

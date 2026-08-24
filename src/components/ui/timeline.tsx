@@ -30,7 +30,7 @@ function Row({
         <a href={r.url} rel="noopener">
           {r.org}
         </a>{" "}
-        — {r.desc}
+        · {r.desc}
       </div>
       {badge && r.era === "bridge" ? (
         <span className={styles.badge}>shipping&nbsp;→&nbsp;AI-native</span>
