@@ -50,7 +50,7 @@ export default function Contact() {
           </div>
           <div>
             <dt>Base</dt>
-            <dd>{LOCATION} — works everywhere</dd>
+            <dd>{LOCATION} · works everywhere</dd>
           </div>
         </dl>
       </main>

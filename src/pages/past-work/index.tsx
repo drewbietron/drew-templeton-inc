@@ -11,7 +11,7 @@ import { absoluteUrl } from "../../lib/site";
 import styles from "./index.module.scss";
 
 const DESCRIPTION =
-  "Drew Templeton's career history and selected projects from before the agents — founder, sole developer, and product leader since 2010: Paintball Vault, PangoBooks, Reverb, Studio Three, Crowler, Blitz Lake. The current AI-native work lives in the case studies.";
+  "Drew Templeton's career history and selected projects from before the agents. Founder, sole developer, and product leader since 2010: Paintball Vault, PangoBooks, Reverb, Studio Three, Crowler, Blitz Lake. The current AI-native work lives in the case studies.";
 
 export default function PastWork() {
   return (
@@ -24,7 +24,7 @@ export default function PastWork() {
           {
             "@context": "https://schema.org",
             "@type": "CollectionPage",
-            name: "Past Work — Drew Templeton",
+            name: "Past Work by Drew Templeton",
             url: absoluteUrl("/past-work"),
             description: DESCRIPTION,
             hasPart: WORK_ROWS.filter((r) => r.page).map((r) => ({

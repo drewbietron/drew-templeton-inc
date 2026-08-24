@@ -17,7 +17,7 @@ export default function Nav() {
   return (
     <nav className="container" aria-label="Primary">
       <div className={styles.nav}>
-        <Link href="/" className={styles.brand} aria-label="Drew Templeton — home">
+        <Link href="/" className={styles.brand} aria-label="Drew Templeton, home">
           drew<span className={styles.at}>@</span>templeton
           <span className={styles.prompt}>:~$</span>
         </Link>
@@ -42,7 +42,7 @@ export default function Nav() {
               href={SITE_LINKS.randal}
               className={classNames(styles.link, styles.randal)}
               rel="noopener"
-              title="Randal — the AI chassis I built. Sign up at randal.bot"
+              title="Randal: the AI chassis I built. Sign up at randal.bot"
             >
               Randal <span aria-hidden="true">↗</span>
             </a>

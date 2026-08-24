@@ -30,7 +30,7 @@ export default function ProjectPage({ slug }: Props) {
         path={`/past-work/${project.slug}`}
         type="article"
         image={`/og/${project.slug}.png`}
-        imageAlt={`${project.name} — past work by Drew Templeton`}
+        imageAlt={`${project.name}: past work by Drew Templeton`}
         publishedTime={project.datePublished}
         jsonLd={[
           articleSchema({

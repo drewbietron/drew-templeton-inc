@@ -32,7 +32,7 @@ export default function CaseStudyPage({ slug }: Props) {
         path={`/case-studies/${cs.slug}`}
         type="article"
         image={`/og/${cs.slug}.png`}
-        imageAlt={`${cs.name} — case study by Drew Templeton`}
+        imageAlt={`${cs.name}: case study by Drew Templeton`}
         publishedTime={cs.datePublished}
         jsonLd={[
           articleSchema({

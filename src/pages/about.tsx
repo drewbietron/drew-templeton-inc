@@ -21,7 +21,7 @@ export default function About() {
         path="/about"
         type="profile"
         image="/og/about.png"
-        imageAlt="Drew Templeton — operator, not advisor"
+        imageAlt="Drew Templeton: operator, not advisor"
         jsonLd={[
           {
             "@context": "https://schema.org",
@@ -57,7 +57,7 @@ export default function About() {
               </p>
               <p>
                 Away from the keyboard I&apos;m with my wife and daughter in St.
-                Charles, Illinois — or on a paintball field. I&apos;ve competed
+                Charles, Illinois, or on a paintball field. I&apos;ve competed
                 professionally at the sport&apos;s highest international level
                 for nearly twenty years, which turns out to be good training
                 for product work: read fast, commit hard, stay calm under fire.

@@ -49,7 +49,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         "Set technical and product direction for the AI platform under Gusto's internal tools and customer-facing products and won a large org over with working demos.",
     },
     title: "Gusto: the platform every agent stands on",
-    metaTitle: "Gusto case study — leading the Agent Framework behind Gus",
+    metaTitle: "Gusto case study: leading the Agent Framework behind Gus",
     description:
       "How I set technical and product direction for Gusto's Agent Framework, the AI platform under Gus and Gusto's internal tools and won a large org over with working demos. A case study by Drew Templeton.",
     facts: [
@@ -106,10 +106,10 @@ export const CASE_STUDIES: CaseStudy[] = [
       when: "2024 – 2025",
       headline: "Built the flagship AI agent from scratch",
       summary:
-        "Walked into a legal-tech company, wrote the first agent myself, and shipped the product now driving about half its ARR — ahead of a $400M raise at a ~$3B valuation.",
+        "Walked into a legal-tech company, wrote the first agent myself, and shipped the product now driving about half its ARR, ahead of a $400M raise at a ~$3B valuation.",
     },
     title: "Filevine: building the AI agent that became the flagship",
-    metaTitle: "Filevine case study — building the flagship AI agent",
+    metaTitle: "Filevine case study: building the flagship AI agent",
     description:
       "How I embedded at Filevine as the AI lead, built the customer-facing agent from scratch, and shipped the product now driving about half the company's ARR ahead of a $400M raise. A case study by Drew Templeton.",
     facts: [
@@ -135,7 +135,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       {
         heading: "The situation",
         paragraphs: [
-          "Filevine is a large, established legal-tech platform — thousands of law firms run their cases on it. In early 2024 it had the classic big-company AI problem: real customer demand and nothing shipped. It needed someone who could do the product thinking and the engineering at the same time.",
+          "Filevine is a large, established legal-tech platform; thousands of law firms run their cases on it. In early 2024 it had the classic big-company AI problem: real customer demand and nothing shipped. It needed someone who could do the product thinking and the engineering at the same time.",
         ],
       },
       {
@@ -149,7 +149,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       {
         heading: "What shipped",
         paragraphs: [
-          "The agent is now Filevine's flagship product, driving about half of the company's ARR — momentum that carried into a $400M raise at a roughly $3B valuation in 2025. More durable than the numbers: a legal-tech org that used to talk about AI now ships it. The teams I worked with kept building after I left.",
+          "The agent is now Filevine's flagship product, driving about half of the company's ARR, momentum that carried into a $400M raise at a roughly $3B valuation in 2025. More durable than the numbers: a legal-tech org that used to talk about AI now ships it. The teams I worked with kept building after I left.",
         ],
       },
     ],
@@ -163,12 +163,12 @@ export const CASE_STUDIES: CaseStudy[] = [
     name: "Randal",
     card: {
       when: "2023 – now",
-      headline: "Built my own AI chassis — and run companies on it",
+      headline: "Built my own AI chassis, and run companies on it",
       summary:
         "The agent harness behind my businesses and client work, now a product anyone can sign up for at randal.bot. One person plus as many agents as they want, running whole companies.",
     },
     title: "Randal: the chassis I run my companies on",
-    metaTitle: "Randal case study — the AI chassis I run my companies on",
+    metaTitle: "Randal case study: the AI chassis I run my companies on",
     description:
       "Randal is the agent platform I built to run my own businesses: durable memory, schedules, contact channels, auto model routing, evals and a hands off self learning layer. It's the engine behind Paintball Vault, a $1M+ marketplace operated by one person.",
     facts: [
@@ -196,13 +196,13 @@ export const CASE_STUDIES: CaseStudy[] = [
         heading: "What I built",
         paragraphs: [
           "The whole thing: product, engineering, design, and the business around it. Randal turns your computer, or a cloud instance, into an agent runner: it can use your apps the way you do, learn a workflow by watching you once, run alongside always-on cloud bots, and route each step to the model that does it best. Everything scoped, permissioned, and private by default.",
-          "It's also the engine behind [Paintball Vault](https://www.pbvault.com/), a one-person marketplace past $1M in sales and growing — the operating layer my companies run on every day.",
+          "It's also the engine behind [Paintball Vault](https://www.pbvault.com/), a one-person marketplace past $1M in sales and growing. It's the operating layer my companies run on every day.",
         ],
       },
       {
         heading: "Why building it myself matters",
         paragraphs: [
-          "A harness is a pile of unglamorous systems: how agents remember, how schedules run reliably, how permissions stay scoped, which model gets which step, observability, cost analysis — it's a smorgasbord of features that were disparate across the systems that existed. I own every one of those decisions in production, with my own revenue on the line. When I embed in an org, those battle-tested patterns come with me.",
+          "A harness is a pile of unglamorous systems: how agents remember, how schedules run reliably, how permissions stay scoped, which model gets which step, observability, cost analysis. It's a smorgasbord of features that were disparate across the systems that existed. I own every one of those decisions in production, with my own revenue on the line. When I embed in an org, those battle-tested patterns come with me.",
           "And you don't need me in the building to use it. Randal is a product: sign up at [randal.bot](https://randal.bot), install the Mac app, and put the same harness to work on your own queue.",
         ],
       },
